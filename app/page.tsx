@@ -20,13 +20,13 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen space-y-4 px-4 bg-black">
       <Image
-        src="/clefairy.gif"
+        src="/dragonite.gif"
         alt="Next.js logo"
         width={180}
         height={38}
         priority
       />
-      <p className="text-xl font-semibold">Cam&#39;s App</p>
+      <p className="text-xl font-semibold">Andrew&#39;s App</p>
 
       <div className="mt-8 w-1/2 sm:w-64">
         <input
