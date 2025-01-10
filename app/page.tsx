@@ -1,57 +1,42 @@
 'use client'
 
-import Image from "next/image";
-import { useRouter } from 'next/navigation'
-import { useState } from 'react';
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  const router = useRouter()
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
+  const [isVisible, setIsVisible] = useState(false);
 
-  const handleSubmit = () => {
-    if (password === 'bello') {
-      router.push('/bello');
-    } else {
-      setError('Incorrect password. Please try again.');
-    }
-  };
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 1200); // 1.2-second delay
+    return () => clearTimeout(timer); // Cleanup timer on component unmount
+  }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen space-y-4 px-4 bg-black">
-      <Image
-        src="/dragonite.gif"
-        alt="Next.js logo"
-        width={180}
-        height={38}
-        priority
-        className="translate-x-5"
-      />
-      <p className="text-xl font-semibold">Andrew&#39;s App</p>
-
-      <div className="mt-8 w-1/2 sm:w-64">
-        <input
-          type="password"
-          placeholder="Enter password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          className="w-full p-3 border rounded-md focus:outline-none bg-black text-white"
-        />
-      </div>
-
-      <button
-        onClick={handleSubmit}
-        className="w-1/2 sm:w-64 p-3 mt-4 bg-blue-500 text-white rounded-md"
-      >
-        Submit
-      </button>
-
-      {error && (
-        <p className="text-red-500 mt-4 sm:mt-6">{error}</p>
+    <div>
+      {isVisible && (
+        <div className="fixed bottom-5 left-5 text-[#8BA888] font-crimson text-6xl opacity-0 animate-fadeIn">
+        <div>
+          hi, i'm andrew
+        </div>
+        <div className="text-3xl">
+          currently, i'm a software development engineer at amazon web services (aws)
+        </div>
+        </div>
       )}
+      <style jsx global>{`
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+        .animate-fadeIn {
+          animation: fadeIn 1s ease-in-out forwards;
+        }
+      `}</style>
     </div>
   );
 }
-
-
-
