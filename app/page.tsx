@@ -17,10 +17,10 @@ export default function Home() {
       {isVisible && (
         <div className="fixed bottom-5 left-5 text-[#8BA888] font-crimson text-6xl opacity-0 animate-fadeIn">
         <div>
-          hi, i'm andrew
+          hi, i&apos;m andrew
         </div>
         <div className="text-3xl">
-          currently, i'm a software development engineer at amazon web services (aws)
+          currently, i&apos;m a software development engineer at amazon web services (aws)
         </div>
         </div>
       )}
