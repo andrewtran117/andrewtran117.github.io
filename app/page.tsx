@@ -25,6 +25,7 @@ export default function Home() {
         width={180}
         height={38}
         priority
+        className="translate-x-5"
       />
       <p className="text-xl font-semibold">Andrew&#39;s App</p>
 
