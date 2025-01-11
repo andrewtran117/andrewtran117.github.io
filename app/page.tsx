@@ -58,7 +58,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex items-center justify-center min-h-screen bg-[#F8F5F1] text-[#6B7F5C]">
+      <div className="flex items-center justify-center min-h-screen bg-[#F8F5F1] text-[#6B7F5C] md:block">
         {isVisible && (
           <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-6xl px-4 animate-fadeInSmooth transform" style={{ transform: 'translateX(8%)' }}>
             <div className="flex flex-col justify-center font-inter font-bold pb-8">
