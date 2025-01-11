@@ -35,13 +35,13 @@ export default function Home() {
           <div className="flex space-x-2 w-full justify-end">
             <a
               href="#aboutMe"
-              className="px-3 py-2 text-md sm:text-lg font-inter font-bold text-[#44624A] hover:text-black transition"
+              className="px-3 py-2 text-sm sm:text-md md:text-lg lg:text-xl font-inter font-bold text-[#44624A] hover:text-black transition"
             >
               about me
             </a>
             <a
               href="#work"
-              className="px-3 py-2 text-md sm:text-lg font-inter font-bold text-[#44624A] hover:text-black transition"
+              className="px-3 py-2 text-sm sm:text-md md:text-lg lg:text-xl font-inter font-bold text-[#44624A] hover:text-black transition"
             >
               work
             </a>
@@ -49,11 +49,12 @@ export default function Home() {
               href="https://drive.google.com/file/d/1imDv7-Oz0AB6ISDQGXQdzRUD2LvwHUW2/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-3 py-2 text-md sm:text-lg font-inter font-bold text-[#44624A] hover:text-black transition"
+              className="px-3 py-2 text-sm sm:text-md md:text-lg lg:text-xl font-inter font-bold text-[#44624A] hover:text-black transition"
             >
               resume
             </a>
           </div>
+
         </div>
       </div>
 
