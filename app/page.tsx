@@ -60,7 +60,7 @@ export default function Home() {
       {isVisible && (
       <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-6xl px-4 animate-fadeInSmooth transform" style={{ transform: 'translateX(8%)' }}>
 
-        <div className="flex flex-col justify-center font-inter font-bold">
+        <div className="flex flex-col justify-center font-inter font-bold pb-8">
           <h1 className="text-4xl md:text-5xl mb-4 text-[#44624A]">Hi, I&apos;m Andrew</h1>
           <p className="text-lg md:text-xl mb-2 text-[#44624A]">NYC based Software Engineer</p>
           <p className="text-base md:text-lg text-gray-600 pt-12">Currently</p>
