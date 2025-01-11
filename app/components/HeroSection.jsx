@@ -13,12 +13,11 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
-            Hello
+          <h1 className="text-white mb-4 text-lg sm:text-2xl lg:text-4xl lg:leading-normal font-extrabold">
+            Hi, I&apos;m Andrew
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptuous.
+          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl pb-10">
+            Software Engineer based in NYC
           </p>
         </motion.div>
         <motion.div
