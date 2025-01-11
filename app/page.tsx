@@ -53,19 +53,13 @@ export default function Home() {
               resume
             </a>
           </div>
-
-          {/* Mobile View Tab (Hamburger Menu) */}
-          <div className="sm:hidden">
-            <button className="text-[#44624A] font-bold">☰</button>
-            {/* Here, you can implement a hamburger menu that shows a dropdown */}
-          </div>
         </div>
       </div>
 
-      <div className="flex items-center min-h-screen px-10 md:px-20 lg:px-40 relative"> {/* Increased padding */}
+      <div className="flex items-center min-h-screen px-5 sm:px-10 md:px-20 lg:px-40 relative"> {/* Adjusted padding for mobile */}
         {isVisible && (
-          <div className="flex items-center space-x-5 opacity-0 animate-fadeIn w-full max-w-7xl mx-auto">
-            <div className="space-y-5">
+          <div className="flex items-center justify-center w-full max-w-7xl mx-auto opacity-0 animate-fadeIn">
+            <div className="space-y-5 pl-10"> {/* Apply left padding to the text */}
               <div className="text-[#44624A] font-inter text-4xl sm:text-3xl md:text-5xl mb-1">
                 Hi, I&apos;m Andrew
               </div>
@@ -77,7 +71,7 @@ export default function Home() {
                 <div>Software Development Engineer for AWS</div>
               </div>
             </div>
-            <img src="matcha.png" alt="Matcha" className="w-64 h-64 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-96 lg:h-96 pl-8 sm:pl-4" />
+            <img src="matcha.png" alt="Matcha" className="w-64 h-64 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-96 lg:h-96 pl-56 sm:pl-4" />
           </div>
         )}
 
@@ -100,7 +94,7 @@ export default function Home() {
       </div>
 
       {/* About Me Section */}
-      <section id="aboutMe" className="min-h-screen py-20 px-10 sm:px-20 md:px-32 lg:px-48">
+      <section id="aboutMe" className="min-h-screen py-20 px-5 sm:px-10 md:px-16 lg:px-24">
         <div className="max-w-7xl mx-auto space-y-5">
           <h2 className="text-4xl sm:text-3xl text-[#44624A] font-inter">About Me</h2>
           <p className="text-xl sm:text-lg text-[#444]">This is a placeholder for the about me section. Add your text here.</p>
@@ -108,7 +102,7 @@ export default function Home() {
       </section>
 
       {/* Work Section */}
-      <section id="work" className="min-h-screen py-20 px-10 sm:px-20 md:px-32 lg:px-48">
+      <section id="work" className="min-h-screen py-20 px-5 sm:px-10 md:px-16 lg:px-24">
         <div className="max-w-7xl mx-auto space-y-5">
           <h2 className="text-4xl sm:text-3xl text-[#44624A] font-inter">Work</h2>
           <p className="text-xl sm:text-lg text-[#444]">This is a placeholder for the work section. Add your text here.</p>
