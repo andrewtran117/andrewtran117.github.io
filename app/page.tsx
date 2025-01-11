@@ -20,7 +20,7 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-6xl px-4 animate-fadeInSmooth transform" style={{ transform: 'translateX(8%)' }}>
 
         <div className="flex flex-col justify-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Andrew</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Hi, I&apos;m Andrew</h1>
           <p className="text-lg md:text-xl mb-2">NYC based Software Engineer</p>
           <p className="text-base md:text-lg text-gray-600">Currently</p>
           <p className="text-lg md:text-xl font-semibold">Software Development Engineer for AWS</p>
