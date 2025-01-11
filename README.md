@@ -114,7 +114,7 @@ This is where the magic happens! This [workflow file](https://github.com/gregric
 Now that everything is configured, you can commit your code and push to GitHub. This will trigger the GitHub Action workflow and deploy your app to GitHub Pages.
 
 ```bash
-git add . && git commit -m "Initial commit" && git push
+git add . && git commit -m "Mobile Friendly" && git push
 ```
 
 You should see your site deployed to GitHub Pages in a few minutes. 🚀
