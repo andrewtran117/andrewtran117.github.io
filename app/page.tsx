@@ -36,6 +36,7 @@ export default function Home() {
             <a
               href="#aboutMe"
               className="px-3 py-2 text-sm sm:text-md md:text-lg lg:text-xl font-inter font-bold text-[#44624A] hover:text-black transition"
+              style={{ whiteSpace: 'nowrap' }}
             >
               about me
             </a>
