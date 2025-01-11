@@ -12,8 +12,52 @@ export default function Home() {
     return () => clearTimeout(timer); // Cleanup timer on component unmount
   }, []);
 
+  // Scroll to the top of the page
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
 
   return (
+  <div>
+
+      {/* Top Container for Logo and Tab Bar */}
+      <div className="fixed top-0 left-0 right-0 py-4 z-50 bg-[#F8F5F1]">
+        <div className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
+          {/* Logo */}
+          <div
+            className="text-[#44624A] font-inter text-lg sm:text-xl font-bold cursor-pointer"
+            onClick={scrollToTop}
+          >
+            andrew duy tran
+          </div>
+
+          {/* Tab Bar */}
+          <div className="hidden sm:flex space-x-4">
+            <a
+              href="#aboutMe"
+              className="px-3 py-2 text-md sm:text-lg font-bold text-[#44624A] hover:text-black transition"
+            >
+              about me
+            </a>
+            <a
+              href="#work"
+              className="px-3 py-2 text-md sm:text-lg font-bold text-[#44624A] hover:text-black transition"
+            >
+              work
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1imDv7-Oz0AB6ISDQGXQdzRUD2LvwHUW2/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3 py-2 text-md sm:text-lg font-bold text-[#44624A] hover:text-black transition"
+            >
+              resume
+            </a>
+          </div>
+        </div>
+      </div>
+
 
     <div className="flex items-center justify-center min-h-screen bg-[#FAF9F6] text-[#6B7F5C]">
       {isVisible && (
@@ -55,6 +99,7 @@ export default function Home() {
 
 
     </div>
+  </div>
   );
 }
 
