@@ -20,18 +20,18 @@ export default function Home() {
   return (
     <div>
       {/* Top Container for Logo and Tab Bar */}
-      <div className="fixed top-0 left-0 right-0 flex justify-between items-center p-4 z-50" style={{ backgroundColor: '#F8F5F1' }}>
-        {/* Logo */}
-        <div
-          className="ml-[10rem] text-[#44624A] font-inter text-lg font-bold cursor-pointer"
-          onClick={scrollToTop} // Scroll to top on click
-        >
-          andrew duy tran
-        </div>
+      <div className="fixed top-0 left-0 right-0 p-4 z-50" style={{ backgroundColor: '#F8F5F1' }}>
+        <div className="max-w-7xl mx-auto flex justify-between items-center">
+          {/* Logo */}
+          <div
+            className="text-[#44624A] font-inter text-lg font-bold cursor-pointer"
+            onClick={scrollToTop} // Scroll to top on click
+          >
+            andrew duy tran
+          </div>
 
-        {/* Tab Bar */}
-        <div className="mr-[10rem]">
-          <div className="flex justify-center space-x-4">
+          {/* Tab Bar */}
+          <div className="hidden sm:flex space-x-4">
             <a
               href="#aboutMe"
               className="px-4 py-2 text-lg font-bold text-[#44624A] hover:text-black transition"
@@ -53,17 +53,23 @@ export default function Home() {
               resume
             </a>
           </div>
+
+          {/* Mobile View Tab (Hamburger Menu) */}
+          <div className="sm:hidden">
+            <button className="text-[#44624A] font-bold">☰</button>
+            {/* Here, you can implement a hamburger menu that shows a dropdown */}
+          </div>
         </div>
       </div>
 
-      <div className="flex items-center min-h-screen px-5 relative">
+      <div className="flex items-center min-h-screen px-10 md:px-20 lg:px-40 relative"> {/* Increased padding */}
         {isVisible && (
-          <div className="flex items-center space-x-5 ml-[10rem] opacity-0 animate-fadeIn">
+          <div className="flex items-center space-x-5 opacity-0 animate-fadeIn w-full max-w-7xl mx-auto">
             <div className="space-y-5">
-              <div className="text-[#44624A] font-inter text-5xl mb-1">
+              <div className="text-[#44624A] font-inter text-4xl sm:text-3xl md:text-5xl mb-1">
                 Hi, I&apos;m Andrew
               </div>
-              <div className="text-xl text-[#44624A]">
+              <div className="text-xl text-[#44624A] sm:text-lg">
                 NYC based Software Engineer
               </div>
               <div className="text-2xl text-[#44624A] pt-10">
@@ -71,7 +77,7 @@ export default function Home() {
                 <div>Software Development Engineer for AWS</div>
               </div>
             </div>
-            <img src="matcha.png" alt="Matcha" className="w-256 h-256 pl-64" />
+            <img src="matcha.png" alt="Matcha" className="w-64 h-64 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-96 lg:h-96 pl-8 sm:pl-4" />
           </div>
         )}
 
@@ -94,18 +100,18 @@ export default function Home() {
       </div>
 
       {/* About Me Section */}
-      <section id="aboutMe" className="min-h-screen py-20 px-10">
-        <div className="space-y-5">
-          <h2 className="text-4xl text-[#44624A] font-inter">About Me</h2>
-          <p className="text-xl text-[#444]">This is a placeholder for the about me section. Add your text here.</p>
+      <section id="aboutMe" className="min-h-screen py-20 px-10 sm:px-20 md:px-32 lg:px-48">
+        <div className="max-w-7xl mx-auto space-y-5">
+          <h2 className="text-4xl sm:text-3xl text-[#44624A] font-inter">About Me</h2>
+          <p className="text-xl sm:text-lg text-[#444]">This is a placeholder for the about me section. Add your text here.</p>
         </div>
       </section>
 
       {/* Work Section */}
-      <section id="work" className="min-h-screen py-20 px-10">
-        <div className="space-y-5">
-          <h2 className="text-4xl text-[#44624A] font-inter">Work</h2>
-          <p className="text-xl text-[#444]">This is a placeholder for the work section. Add your text here.</p>
+      <section id="work" className="min-h-screen py-20 px-10 sm:px-20 md:px-32 lg:px-48">
+        <div className="max-w-7xl mx-auto space-y-5">
+          <h2 className="text-4xl sm:text-3xl text-[#44624A] font-inter">Work</h2>
+          <p className="text-xl sm:text-lg text-[#444]">This is a placeholder for the work section. Add your text here.</p>
         </div>
       </section>
 
