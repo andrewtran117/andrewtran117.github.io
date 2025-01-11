@@ -1,11 +1,12 @@
-'use client'
-
-import Greetings from "./greeting/page";
-
+import Navbar from "./components/Navbar";
 export default function Home() {
+
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center px-4">
-      <Greetings />
-    </div>
+    <main className="flex min-h-screen flex-col bg-[#121212]">
+      <Navbar />
+      <div className="container mt-24 mx-auto px-12 py-4">
+        hi
+      </div>
+    </main>
   );
 }
