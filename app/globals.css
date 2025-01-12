@@ -30,15 +30,6 @@ main {
   scroll-snap-align: start;
 }
 
-/* Section styling with consistent margins */
-section {
-  min-height: 100vh;
-  scroll-snap-align: start;
-  margin-left: 0.25in;
-  margin-right: 0.25in;
-  padding-top: 0.25in;
-}
-
 html {
   scroll-behavior: smooth;
 }
