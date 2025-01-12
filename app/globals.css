@@ -24,4 +24,28 @@ body {
   overflow-x: hidden;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
 
+main {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.container {
+  scroll-snap-align: start;
+}
+
+section {
+  min-height: 100vh; /* Each section takes up the full viewport */
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
