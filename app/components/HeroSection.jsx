@@ -13,8 +13,8 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center justify-self-center text-center sm:justify-self-start sm:text-left"
         >
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
-            Hi, Im Andrew
+          <h1 className="text-white mb-4 text-2xl sm:text-3xl lg:text-6xl lg:leading-normal font-extrabold">
+            Hi, I&apos;m Andrew Tran
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl pb-10">
             Software Engineer based in NYC
