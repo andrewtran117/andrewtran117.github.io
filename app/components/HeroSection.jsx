@@ -11,12 +11,12 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-8 place-self-center justify-self-center text-center sm:justify-self-start sm:text-left"
+          className="col-span-8 place-self-center justify-self-center text-center sm:justify-self-start sm:text-left text-[#44624a]"
         >
-          <h1 className="text-white mb-4 text-2xl sm:text-3xl lg:text-6xl lg:leading-normal font-extrabold">
+          <h1 className="mb-4 text-2xl sm:text-3xl lg:text-6xl lg:leading-normal font-extrabold">
             Hi, I&apos;m Andrew Tran
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl pb-10">
+          <p className="text-base sm:text-lg mb-6 lg:text-xl pb-10">
             Software Engineer based in NYC
           </p>
         </motion.div>
