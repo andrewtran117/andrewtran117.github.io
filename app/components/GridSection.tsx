@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProfileGrid: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-[1fr_3fr] gap-y-8 sm:gap-x-16 p-[1in] text-[#f9f9f9] font-sans">
+    <div className="grid grid-cols-1 sm:grid-cols-[1fr_3fr] gap-y-8 sm:gap-x-16 my-8 pt-[0.25in] sm:pl-[0.25in] sm:pr-[0.25in] md:pl-[.25in] md:pr-[.25in] lg:pl-[.25in] lg:pr-[.25in] text-[#f9f9f9] font-sans">
       {/* 1st Row - 1st Column */}
       <div className="flex flex-col">
         <div className="text-2xl font-bold">Andrew Tran</div>
@@ -13,13 +13,12 @@ const ProfileGrid: React.FC = () => {
       {/* 1st Row - 2nd Column */}
       <div>
         <p className="text-base leading-relaxed">
-        I am driven by the constant desire to learn, grow, and
-        push the boundaries of what’s possible.
-        My work has improved customer experiences, enhanced urban safety, and made technology more accessible
-        in communities, all while driving innovation in impactful ways.
-        I attribute my success to the people around me, mentors, colleagues, and communities, who
-        continuously inspire and empower me to elevate my work and make a lasting difference.
-
+          I am driven by the constant desire to learn, grow, and
+          push the boundaries of what’s possible.
+          My work has improved customer experiences, enhanced urban safety, and made technology more accessible
+          in communities, all while driving innovation in impactful ways.
+          I attribute my success to the people around me, mentors, colleagues, and communities, who
+          continuously inspire and empower me to elevate my work and make a lasting difference.
         </p>
       </div>
 
