@@ -1,6 +1,5 @@
 import AboutMeGallery from "./components/AboutMeImage";
 import ProfileGrid from "./components/GridSection";
-import Quote from "./components/quote";
 import ResearchExperience from "./components/ResearchExp";
 import WorkExperience from "./components/WorkExp";
 
