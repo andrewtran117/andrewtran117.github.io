@@ -14,8 +14,9 @@ export default {
       },
       fontFamily: {
         crimson: ["'Crimson Text'", "serif"], // Add Crimson Text font
-      }
+      },
     },
   },
   plugins: [],
 } satisfies Config;
+
