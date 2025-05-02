@@ -79,7 +79,7 @@ const ResearchExperience = () => {
           authors="Stephen MacNeil, Andrew Tran, Arto Hellas, Joanne Kim, Sami Sarsa, Paul Denny, Seth Bernstein, Juho Leinonen"
           venue="SICGSETS"
           year={2023}
-          link="https://arxiv.org/pdf/2307.01142"
+          link="https://arxiv.org/abs/2211.02265"
           highlightName="Andrew Tran"
         />
 
