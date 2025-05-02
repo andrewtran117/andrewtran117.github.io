@@ -1,10 +1,13 @@
 import React from 'react';
 
-interface ProfileGridProps {
-  showBioInRightColumn?: boolean;
-}
+// interface ProfileGridProps {
+//   showBioInRightColumn?: boolean;
+// }
 
-const ProfileGrid: React.FC<ProfileGridProps> = ({ showBioInRightColumn = false }) => {
+// interface ProfileGridProps {}
+
+
+const ProfileGrid: React.FC = () => {
   return (
     <div className="text-[#f9f9f9] font-sans">
       {/* Profile Photo and Info */}

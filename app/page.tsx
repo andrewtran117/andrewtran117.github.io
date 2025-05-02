@@ -9,7 +9,7 @@ export default function Home() {
       {/* Fixed Left Column - Profile Info */}
       <div className="w-1/4 min-w-[250px] h-screen pl-16 pr-8 pt-24 pb-6 fixed left-0 top-0 flex items-start">
         <div className="w-full">
-          <ProfileGrid showBioInRightColumn={true} />
+          <ProfileGrid/>
         </div>
       </div>
       
@@ -20,7 +20,7 @@ export default function Home() {
           <h2 className="text-2xl font-bold mb-4">About Me</h2>
           <p className="text-base leading-relaxed">
             I am driven by the constant desire to learn, grow, and
-            push the boundaries of what's possible.
+            push the boundaries of what&apos;s possible.
             My work has improved customer experiences, enhanced urban safety, and made technology more accessible
             in communities, all while driving innovation in impactful ways.
             I attribute my success to the people around me, mentors, colleagues, and communities, who
