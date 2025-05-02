@@ -9,11 +9,11 @@ const ProfileGrid: React.FC<ProfileGridProps> = ({ showBioInRightColumn = false 
     <div className="text-[#f9f9f9] font-sans">
       {/* Profile Photo and Info */}
       <div className="flex flex-col space-y-4">
-        <div className="w-36 h-36 mx-auto sm:mx-0 overflow-hidden">
+        <div className="w-56 h-56 mx-auto sm:mx-0 overflow-hidden">
           <img 
             src="/headshot_andrew.png"
             alt="Andrew Tran"
-            className="w-36 h-36 rounded-xl object-cover shadow-lg"
+            className="w-56 h-56 rounded-xl object-cover shadow-lg"
           />
         </div>
         <div>
