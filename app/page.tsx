@@ -1,7 +1,6 @@
 // AboutMeGallery component removed
 import ProfileGrid from "./components/GridSection";
 import ResearchExperience from "./components/ResearchExp";
-import WorkExperience from "./components/WorkExp";
 
 export default function Home() {
   return (
