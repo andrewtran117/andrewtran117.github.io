@@ -4,18 +4,18 @@ import ResearchExperience from "./components/ResearchExp";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen bg-[#f5f5f5] text-[#333333] overflow-hidden">
-      {/* Fixed Left Column - Profile Info */}
-      <div className="w-1/4 min-w-[250px] h-screen pl-16 pr-8 pt-24 pb-6 fixed left-0 top-0 flex items-start">
+    <main className="flex flex-col md:flex-row min-h-screen bg-[#f5f5f5] text-[#333333] overflow-x-hidden">
+      {/* Profile Info Column - Responsive */}
+      <div className="w-full md:w-1/4 md:min-w-[250px] md:h-screen px-6 md:pl-16 md:pr-8 pt-12 md:pt-24 pb-6 md:fixed md:left-0 md:top-0 flex items-center md:items-start">
         <div className="w-full">
           <ProfileGrid/>
         </div>
       </div>
       
-      {/* Scrollable Right Column - Content */}
-      <div className="w-[calc(75%-32px)] ml-[calc(25%+8px)] h-screen overflow-y-auto px-0 pt-24 pb-12">
+      {/* Content Column - Responsive */}
+      <div className="w-full md:w-[calc(75%-32px)] md:ml-[calc(25%+8px)] md:h-screen overflow-y-auto px-6 md:px-0 pt-8 md:pt-24 pb-12">
         {/* Bio Section */}
-        <div className="mb-12 pr-16 pl-0">
+        <div className="mb-12 md:pr-16 md:pl-0">
           <h2 className="text-2xl font-bold mb-4">About Me</h2>
             <p className="text-base leading-relaxed">
               I&apos;m an engineer joining AWS this summer in New York, NY. I have previously held internships at AWS, the Cigna Group, IBM, and AeroPest (autonomous AI drone startup for pest control).
@@ -34,7 +34,7 @@ export default function Home() {
         </div>
         
         {/* Research Experience Section */}
-        <div className="pr-16 pl-0">
+        <div className="md:pr-16 md:pl-0">
           <ResearchExperience />
         </div>
       </div>
