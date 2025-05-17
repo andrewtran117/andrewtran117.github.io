@@ -4,7 +4,7 @@ import ResearchExperience from "./components/ResearchExp";
 
 export default function Home() {
   return (
-    <main className="flex flex-col md:flex-row min-h-screen bg-[#f5f5f5] text-[#333333] md:overflow-hidden">
+    <main className="flex flex-col md:flex-row min-h-screen bg-[#f5f5f5] text-[#333333] md:overflow-hidden max-w-7xl mx-auto">
       {/* Profile Info Column - Non-scrollable */}
       <div className="w-full md:w-1/4 md:min-w-[300px] px-6 md:pl-16 md:pr-10 pt-12 md:pt-24 pb-6 flex items-center md:items-start bg-[#f5f5f5] md:sticky md:top-0 md:self-start">
         <div className="w-full">
