@@ -5,15 +5,15 @@ import ResearchExperience from "./components/ResearchExp";
 export default function Home() {
   return (
     <main className="flex flex-col md:flex-row min-h-screen bg-[#f5f5f5] text-[#333333] overflow-x-hidden">
-      {/* Profile Info Column - Responsive */}
-      <div className="w-full md:w-1/4 md:min-w-[250px] md:h-screen px-6 md:pl-16 md:pr-8 pt-12 md:pt-24 pb-6 md:fixed md:left-0 md:top-0 flex items-center md:items-start">
+      {/* Profile Info Column - Fixed on desktop */}
+      <div className="w-full md:w-1/4 md:min-w-[300px] md:h-screen px-6 md:pl-16 md:pr-10 pt-12 md:pt-24 pb-6 flex items-center md:items-start bg-[#f5f5f5] md:fixed md:left-0 md:top-0">
         <div className="w-full">
           <ProfileGrid/>
         </div>
       </div>
       
-      {/* Content Column - Responsive */}
-      <div className="w-full md:w-[calc(75%-32px)] md:ml-[calc(25%+8px)] md:h-screen overflow-y-auto px-6 md:px-0 pt-8 md:pt-24 pb-12">
+      {/* Content Column - Scrollable */}
+      <div className="w-full md:w-3/4 md:ml-[25%] px-6 md:pl-12 md:pr-8 pt-8 md:pt-24 pb-12 md:overflow-y-auto">
         {/* Bio Section */}
         <div className="mb-12 md:pr-16 md:pl-0">
           <h2 className="text-2xl font-bold mb-4">About Me</h2>

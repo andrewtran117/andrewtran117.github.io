@@ -21,8 +21,8 @@ const ProfileGrid: React.FC = () => {
         </div>
         <div className="text-center md:text-left">
           <div className="text-2xl font-bold">Andrew Tran</div>
-          <div className="text-lg">Software Development Engineer</div>
-          <div className="text-lg">New York, NY</div>
+          <div className="text-xl">Software Engineer</div>
+          <div className="text-xl">New York, NY</div>
         </div>
         
         {/* Contact Links */}
