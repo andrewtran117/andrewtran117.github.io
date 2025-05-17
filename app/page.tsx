@@ -4,16 +4,16 @@ import ResearchExperience from "./components/ResearchExp";
 
 export default function Home() {
   return (
-    <main className="flex flex-col md:flex-row min-h-screen bg-[#f5f5f5] text-[#333333] overflow-x-hidden">
-      {/* Profile Info Column - Fixed on desktop */}
-      <div className="w-full md:w-1/4 md:min-w-[300px] md:h-screen px-6 md:pl-16 md:pr-10 pt-12 md:pt-24 pb-6 flex items-center md:items-start bg-[#f5f5f5] md:fixed md:left-0 md:top-0">
+    <main className="flex flex-col md:flex-row min-h-screen bg-[#f5f5f5] text-[#333333] md:overflow-hidden">
+      {/* Profile Info Column - Non-scrollable */}
+      <div className="w-full md:w-1/4 md:min-w-[300px] px-6 md:pl-16 md:pr-10 pt-12 md:pt-24 pb-6 flex items-center md:items-start bg-[#f5f5f5] md:sticky md:top-0 md:self-start">
         <div className="w-full">
           <ProfileGrid/>
         </div>
       </div>
       
       {/* Content Column - Scrollable */}
-      <div className="w-full md:w-3/4 md:ml-[25%] px-6 md:pl-12 md:pr-8 pt-8 md:pt-24 pb-12 md:overflow-y-auto">
+      <div className="w-full md:w-3/4 px-6 md:pl-12 md:pr-8 pt-8 md:pt-24 pb-12 md:overflow-y-auto md:max-h-screen">
         {/* Bio Section */}
         <div className="mb-12 md:pr-16 md:pl-0">
           <h2 className="text-2xl font-bold mb-4">About Me</h2>
