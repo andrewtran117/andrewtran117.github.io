@@ -25,7 +25,7 @@ const ProfileGrid: React.FC = () => {
           <div className="text-xl">New York, NY</div>
         </div>
         
-        {/* Contact Links */}
+        {/* Contact Linkss */}
         <div className="flex flex-row md:flex-col space-x-4 md:space-x-0 md:space-y-2 mt-2 md:mt-4">
           <a href="mailto:andrew.tran117@outlook.com" className="text-[#d32f2f] underline hover:text-[#b71c1c]">
             Contact
