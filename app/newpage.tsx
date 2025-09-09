@@ -47,12 +47,12 @@ export default function Homee() {
               work
             </a>
             <a
-              href="https://drive.google.com/file/d/1imDv7-Oz0AB6ISDQGXQdzRUD2LvwHUW2/view?usp=sharing"
+              href="https://drive.google.com/file/d/1xBCICLQabAc0rc6W8qDyRcZ0eJo2ekN2/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="px-3 py-2 text-sm sm:text-md md:text-lg lg:text-xl font-inter font-bold text-[#44624A] hover:text-black transition"
             >
-              resume
+              CV
             </a>
           </div>
         </div>
