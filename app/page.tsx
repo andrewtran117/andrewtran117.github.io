@@ -75,7 +75,7 @@ export default function Home() {
               </a>
               , and view my&nbsp;
               <a
-                href="https://drive.google.com/file/d/1Y0TncQZ_RnFmuP2bnoNFSYVV6AXBheWK/view?usp=sharing"
+                href="https://drive.google.com/file/d/1xBCICLQabAc0rc6W8qDyRcZ0eJo2ekN2/view?usp=sharing"
                 className="text-[#d32f2f] underline hover:text-[#b71c1c]"
                 target="_blank"
                 rel="noopener noreferrer"
