@@ -50,22 +50,19 @@ export default function Home() {
       <div className="w-full md:w-3/4 px-6 md:pl-12 md:pr-8 pt-8 md:pt-24 pb-12 md:overflow-y-auto md:max-h-screen">
         {activeTab === "about" && (
           <div className="mb-12 md:pr-16 md:pl-0">
+            <h1 className="text-2xl font-semibold mb-4">Welcome to my page!</h1>
             <p className="text-base leading-relaxed">
-              Hello! Welcome to my page :)
+              Here you'll find a snapshot of upcoming events in my life, along with a timeline highlighting key moments from my journey in technology.
             </p>
             <p className="text-base leading-relaxed mt-4">
-              Below, you'll find upcoming events in my life as well as a timeline of just some of my experiences in a career in technology.
-              Yes, I know! It's a lot of text. If you don't want to read it all, I understand (p.s. the red is the cool part!)
-            </p>
-            <p className="text-base leading-relaxed mt-6">
-              But... there are a couple types of people who I think would benefit from reading everything:
+              This space is especially relevant for:
             </p>
             <ul className="list-disc pl-6 mt-2 space-y-3">
               <li className="text-base leading-relaxed">
-                <span className="font-semibold">Engineers, Scientists, and Recruiters in AI</span>: if you are reading this, reach out, I'd love to work with you! I've been in AI research for 4 years and have seen firsthand how it impacts the people around me. I'd make a great addition to your team.
+                <span className="font-semibold">Engineers, Scientists, and AI Recruiters</span>: I bring over four years of experience in AI research and a deep understanding of its impact on people and society. I would be excited to contribute my expertise and collaborate on meaningful projects.
               </li>
               <li className="text-base leading-relaxed">
-                <span className="font-semibold">Students</span>: whether you are a Temple Owl, or any other animal that's definitely not as cool as an Owl, maybe you'll learn about some of the opportunities available to you today. Hopefully I can inspire you to do something amazing!
+                <span className="font-semibold">Students</span>: Whether you're a fellow Temple Owl or from another university, I hope my experiences showcase the opportunities available today and inspire you to pursue something extraordinary.
               </li>
             </ul>
 
@@ -76,17 +73,6 @@ export default function Home() {
             {/* Add general news bullets here just like the yearly lists */}
             <ul className="list-disc pl-6 mt-2 space-y-1">
             <li className="text-[#666666]">Invited to speak at OwHacks 2025 on a panel. </li>
-            <li className="text-[#666666]">Invited to speak at {""}
-              <a
-                href="https://www.ted.com/tedx/events/64289"
-                className="text-[#d32f2f] underline hover:text-[#b71c1c]"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                TedxTemple
-              </a>
-              . My topic will not be disclosed until later.
-            </li>
             </ul>
 
             <div className="mt-3 space-y-6">
