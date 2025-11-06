@@ -21,6 +21,15 @@ const ResearchExperience = () => {
       {/* Publication Cards */}
       <div className="mt-0 text-[#333333]">
         <CitationCard
+            title="Global PIQA: Evaluating Physical Commonsense Reasoning Across 100+ Languages and Cultures"
+            authors="Tyler A Chang, Catherine Arnett, Authors at the 5th Multilingual Representation Learning (MRL) Workshop"
+            venue="SIGTYP"
+            year={2025}
+            link="https://arxiv.org/pdf/2510.24081"
+            highlightName="Andrew Tran"
+        />
+
+        <CitationCard
           title="Hacking Student Leadership: Peer Mentorship and Leadership Skill Development Among Hackathon Organizers"
           authors="Kush Patel, Andrew Tran, Christine Kapp, Daniel Bicalho, Yatri Patel, Chiku Okechukwu, Egi Rama, Stephen MacNeil"
           venue="SIGCSETS"
