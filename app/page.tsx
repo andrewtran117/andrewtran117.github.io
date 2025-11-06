@@ -65,7 +65,7 @@ export default function Home() {
                 >
                   AWS Connect
                 </a>{' '}
-                working on Agent Workspace. I also am part of the{' '}
+                working on Agent Workspace. I also doing work alongside the{' '}
                 <a
                   href="https://evalevalai.com/"
                   className="text-[#d32f2f] underline hover:text-[#b71c1c]"
@@ -78,6 +78,8 @@ export default function Home() {
               </p>
               <ul className="list-disc pl-6 space-y-1 mb-6">
                 <li className="text-base leading-relaxed">AI Evaluations for Safety and Alignment</li>
+                <li className="text-base leading-relaxed">AI Control</li>
+                <li className="text-base leading-relaxed">Mechanistic Interpretability</li>
                 <li className="text-base leading-relaxed">Large Language Models in CS Education</li>
                 <li className="text-base leading-relaxed">Educational Technology & Student Development</li>
               </ul>
