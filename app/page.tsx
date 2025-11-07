@@ -65,7 +65,7 @@ export default function Home() {
                 >
                   AWS Connect
                 </a>{' '}
-                working on Agent Workspace. I also doing work alongside the{' '}
+                working on Agent Workspace. I'm also conducting work alongside the{' '}
                 <a
                   href="https://evalevalai.com/"
                   className="text-[#d32f2f] underline hover:text-[#b71c1c]"
