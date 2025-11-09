@@ -5,15 +5,15 @@ import { useState } from "react";
 import ProfileGrid from "./components/GridSection";
 import ResearchExperience from "./components/ResearchExp";
 
-type TabKey = "about" | "publications" | "projects";
+type TabKey = "about" | "publications";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<TabKey>("about");
 
   return (
-    <main className="flex flex-col md:flex-row min-h-screen bg-[#f5f5f5] text-[#333333] md:overflow-hidden max-w-7xl mx-auto">
+    <main className="flex flex-col md:flex-row min-h-screen bg-[#FFF4CC] text-[#5A3318] md:overflow-hidden max-w-7xl mx-auto">
       {/* Profile Info Column - Non-scrollable */}
-      <div className="w-full md:w-1/4 md:min-w-[300px] px-6 md:pl-16 md:pr-10 pt-12 md:pt-24 pb-6 bg-[#f5f5f5] md:sticky md:top-0 md:self-start">
+      <div className="w-full md:w-1/4 md:min-w-[300px] px-6 md:pl-16 md:pr-10 pt-12 md:pt-24 pb-6 bg-[#FFF4CC] md:sticky md:top-0 md:self-start">
         <div className="w-full">
           <ProfileGrid />
 
@@ -34,13 +34,6 @@ export default function Home() {
               >
                 Publications
               </button>
-              <button
-                className="tab-link text-left"
-                aria-current={activeTab === "projects" ? "page" : undefined}
-                onClick={() => setActiveTab("projects")}
-              >
-                Projects
-              </button>
             </nav>
           </div>
         </div>
@@ -51,38 +44,56 @@ export default function Home() {
         {activeTab === "about" && (
           <div className="mb-12 md:pr-16 md:pl-0">
             {/* <h1 className="text-2xl font-semibold mb-4">Hello!</h1> */}
-            
-            {/* About Me Section */}
+
+            <p className="italic text-xs mb-6 text-right">trying a new fall inspired color scheme, lmk your thoughts</p>
+
+            {/* Research Section */}
             <div className="mb-8">
-              <h2 className="text-xl font-semibold mb-3">Research and Software Engineering</h2>
+              <h2 className="text-xl font-semibold mb-3">Research</h2>
               <p className="text-base leading-relaxed mb-4">
-                I'm currently a Software Engineer at{' '}
-                <a
-                  href="https://aws.amazon.com/connect/agent-workspace/"
-                  className="text-[#d32f2f] underline hover:text-[#b71c1c]"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  AWS Connect
-                </a>{' '}
-                working on Agent Workspace. I'm also conducting work alongside the{' '}
+                I'm furthering research alongside the{' '}
                 <a
                   href="https://evalevalai.com/"
-                  className="text-[#d32f2f] underline hover:text-[#b71c1c]"
+                  className="text-[#d97706] underline hover:text-[#d97706]"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Evaluating Evaluations (EvalEval) Coalition
                 </a>
-                . I am interested in the following research areas:
+                . Also looking for more projects/collaborators. My interests include:
               </p>
               <ul className="list-disc pl-6 space-y-1 mb-6">
-                <li className="text-base leading-relaxed">AI Evaluations for Safety and Alignment</li>
+                <li className="text-base leading-relaxed">AI Evaluations</li>
                 <li className="text-base leading-relaxed">AI Control</li>
                 <li className="text-base leading-relaxed">Mechanistic Interpretability</li>
                 <li className="text-base leading-relaxed">Large Language Models in CS Education</li>
                 <li className="text-base leading-relaxed">Educational Technology & Student Development</li>
               </ul>
+            </div>
+
+            {/* Software Engineering Section */}
+            <div className="mb-8">
+              <h2 className="text-xl font-semibold mb-3">Software Engineering</h2>
+              <p className="text-base leading-relaxed mb-4">
+                I'm currently a Software Engineer at{' '}
+                <a
+                  href="https://aws.amazon.com/connect/agent-workspace/"
+                  className="text-[#d97706] underline hover:text-[#d97706]"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  AWS Connect
+                </a>{' '}
+                working on Agent Workspace.
+              </p>
+            </div>
+
+            {/* Hobbies Section */}
+            <div className="mb-8">
+              <h2 className="text-xl font-semibold mb-3">Hobbies</h2>
+              <p className="text-base leading-relaxed mb-4">
+                I love trying new food. I currently have 372 new Beli spots for 2025.
+              </p>
             </div>
 
             {/* Commented out News Section
@@ -112,15 +123,6 @@ export default function Home() {
         {activeTab === "publications" && (
           <div className="md:pr-16 md:pl-0">
             <ResearchExperience />
-          </div>
-        )}
-
-        {activeTab === "projects" && (
-          <div className="md:pr-16 md:pl-0">
-            <h2 className="text-2xl font-bold mb-4">Projects</h2>
-            <p className="text-base leading-relaxed">
-              I&apos;ll be adding selected projects here soon. Check back for updates! For now, take a look at my CV for projects :)
-            </p>
           </div>
         )}
       </div>

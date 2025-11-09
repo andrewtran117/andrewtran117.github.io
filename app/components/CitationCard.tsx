@@ -26,10 +26,10 @@ const CitationCard: React.FC<CitationCardProps> = ({ title, authors, venue, year
 
   return (
     <div className="mb-4">
-      <a href={link} target="_blank" rel="noopener noreferrer" className="font-semibold underline text-[#d32f2f]">
+      <a href={link} target="_blank" rel="noopener noreferrer" className="font-semibold underline text-[#d97706]">
         {title}
       </a>
-      <div className="text-sm text-[#333333]">
+      <div className="text-sm text-[#5A3318]">
         {renderAuthors()}. <span className="italic">{venue}</span>, {year}.
       </div>
     </div>
