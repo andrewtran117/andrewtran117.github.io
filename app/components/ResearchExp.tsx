@@ -21,6 +21,15 @@ const ResearchExperience = () => {
       {/* Publication Cards */}
       <div className="mt-0 text-[#5A3318]">
         <CitationCard
+            title="Who Evaluates AI's Social Impacts? Mapping Coverage and Gaps in First and Third Party Evaluations"
+            authors="Authors at the Evaluating Evaluations (EvalEval) Coalition"
+            venue="In Submission at ICLR"
+            year={2026}
+            link="https://arxiv.org/pdf/2511.05613"
+            highlightName="Andrew Tran"
+        />
+
+        <CitationCard
             title="Global PIQA: Evaluating Physical Commonsense Reasoning Across 100+ Languages and Cultures"
             authors="Tyler A Chang, Catherine Arnett, Authors at the 5th Multilingual Representation Learning (MRL) Workshop"
             venue="SIGTYP"
