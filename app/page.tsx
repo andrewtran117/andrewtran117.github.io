@@ -51,7 +51,7 @@ export default function Home() {
             <div className="mb-8">
               <h2 className="text-xl font-semibold mb-3">Research</h2>
               <p className="text-base leading-relaxed mb-4">
-                I'm furthering research alongside the{' '}
+                I'm working on AI Evaluations with the{' '}
                 <a
                   href="https://evalevalai.com/"
                   className="text-[#d97706] underline hover:text-[#d97706]"
@@ -60,7 +60,7 @@ export default function Home() {
                 >
                   Evaluating Evaluations (EvalEval) Coalition
                 </a>
-                . Also looking for more projects/collaborators. My interests include:
+                . Also looking for more projects/collaborators! My interests include:
               </p>
               <ul className="list-disc pl-6 space-y-1 mb-6">
                 <li className="text-base leading-relaxed">AI Evaluations</li>
