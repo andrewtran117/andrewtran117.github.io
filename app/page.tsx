@@ -11,9 +11,9 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState<TabKey>("about");
 
   return (
-    <main className="flex flex-col md:flex-row min-h-screen bg-[#FFF4CC] text-[#5A3318] md:overflow-hidden max-w-7xl mx-auto">
+    <main className="flex flex-col md:flex-row min-h-screen bg-[#f2f5fa] text-[#0f2a3d] md:overflow-hidden max-w-7xl mx-auto">
       {/* Profile Info Column - Non-scrollable */}
-      <div className="w-full md:w-1/4 md:min-w-[300px] px-6 md:pl-16 md:pr-10 pt-12 md:pt-24 pb-6 bg-[#FFF4CC] md:sticky md:top-0 md:self-start">
+      <div className="w-full md:w-1/4 md:min-w-[300px] px-6 md:pl-16 md:pr-10 pt-12 md:pt-24 pb-6 bg-[#f2f5fa] md:sticky md:top-0 md:self-start">
         <div className="w-full">
           <ProfileGrid />
 
@@ -45,7 +45,7 @@ export default function Home() {
           <div className="mb-12 md:pr-16 md:pl-0">
             {/* <h1 className="text-2xl font-semibold mb-4">Hello!</h1> */}
 
-            <p className="italic text-xs mb-6 text-right">trying a new fall inspired color scheme, lmk your thoughts</p>
+            <p className="italic text-xs mb-6 text-right">trying out a winter palette—thoughts?</p>
 
             {/* Research Section */}
             <div className="mb-8">
@@ -54,7 +54,7 @@ export default function Home() {
                 I'm working on AI Evaluations with the{' '}
                 <a
                   href="https://evalevalai.com/"
-                  className="text-[#d97706] underline hover:text-[#d97706]"
+                  className="text-[#2f7ac6] underline hover:text-[#1f639e]"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -78,7 +78,7 @@ export default function Home() {
                 I'm currently a Software Engineer at{' '}
                 <a
                   href="https://aws.amazon.com/connect/agent-workspace/"
-                  className="text-[#d97706] underline hover:text-[#d97706]"
+                  className="text-[#2f7ac6] underline hover:text-[#1f639e]"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

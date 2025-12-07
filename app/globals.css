@@ -5,13 +5,13 @@
 @tailwind utilities;
 
 :root {
-  --background: #FFF4CC;
-  --foreground: #FFF4CC;
+  --background: #f2f5fa;
+  --foreground: #f2f5fa;
 }
 
 body {
-  background: #FFF4CC;
-  color: #5A3318;
+  background: #f2f5fa;
+  color: #0f2a3d;
   font-family: var(--font-ibm-plex-mono), 'IBM Plex Mono', monospace;
   overflow-x: hidden;
 }
@@ -39,7 +39,7 @@ html {
   position: relative;
   display: inline-block;
   padding: 0.25rem 0.125rem; /* subtle vertical padding */
-  color: #5A3318;
+  color: #0f2a3d;
   font-weight: 500;
   cursor: pointer;
   transition: color 200ms ease;
@@ -48,13 +48,13 @@ html {
 
 .tab-link:hover,
 .tab-link:focus-visible {
-  color: #d97706; /* red text on hover */
+  color: #2f7ac6; /* icy blue on hover */
   outline: none;
 }
 
 /* Active tab state */
 .tab-link[aria-current="page"] {
-  color: #d97706;
+  color: #2f7ac6;
 }
 
 /* Underline swoosh */
@@ -65,7 +65,7 @@ html {
   bottom: -2px;
   height: 2px;
   width: 100%;
-  background: #d97706;
+  background: #2f7ac6;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 350ms ease;
