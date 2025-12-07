@@ -45,7 +45,7 @@ export default function Home() {
           <div className="mb-12 md:pr-16 md:pl-0">
             {/* <h1 className="text-2xl font-semibold mb-4">Hello!</h1> */}
 
-            <p className="italic text-xs mb-6 text-right">trying out a winter palette—thoughts?</p>
+            <p className="italic text-xs mb-6 text-right">trying out a winter palette, thoughts?</p>
 
             {/* Research Section */}
             <div className="mb-8">
