@@ -4,8 +4,9 @@
 import { useState } from "react";
 import ProfileGrid from "./components/GridSection";
 import ResearchExperience from "./components/ResearchExp";
+import ProjectsSection from "./components/ProjectsSection";
 
-type TabKey = "about" | "publications";
+type TabKey = "about" | "publications" | "projects";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<TabKey>("about");
@@ -33,6 +34,13 @@ export default function Home() {
                 onClick={() => setActiveTab("publications")}
               >
                 Publications
+              </button>
+              <button
+                className="tab-link text-left"
+                aria-current={activeTab === "projects" ? "page" : undefined}
+                onClick={() => setActiveTab("projects")}
+              >
+                Projects
               </button>
             </nav>
           </div>
@@ -123,6 +131,12 @@ export default function Home() {
         {activeTab === "publications" && (
           <div className="md:pr-16 md:pl-0">
             <ResearchExperience />
+          </div>
+        )}
+
+        {activeTab === "projects" && (
+          <div className="md:pr-16 md:pl-0">
+            <ProjectsSection />
           </div>
         )}
       </div>
