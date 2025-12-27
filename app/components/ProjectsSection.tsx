@@ -14,6 +14,12 @@ const projects: Project[] = [
       "mini, fast regression harness for local LLMs using Ollama",
     link: { label: "Project", href: "https://github.com/andrewtran117/eval-mini-harness" },
   },
+  {
+    title: "UnreliableNarrators",
+    description:
+      "characters who present a distorted view of reality, whether deliberately or subconsciously can help LLMs in faking alignment",
+    link: { label: "Project", href: "https://github.com/andrewtran117/UnreliableNarrators" },
+  },
 ];
 
 const ProjectsSection = () => {
