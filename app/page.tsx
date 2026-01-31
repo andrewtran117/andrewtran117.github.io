@@ -57,7 +57,7 @@ export default function Home() {
             <div className="mb-8">
               <h2 className="text-xl font-semibold mb-3">My North Star</h2>
               <p className="text-base leading-relaxed mb-4">
-                I look to solve problems where I can think like a researcher and ship like an engineer. My work should have a high impact on others, especailly those from underserved communities.
+                I solve problems where I can think like both a researcher and engineer. My work should have a high impact on others, and especially those from underserved communities.
               </p>
             </div>
 
