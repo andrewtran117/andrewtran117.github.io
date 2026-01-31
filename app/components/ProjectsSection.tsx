@@ -9,6 +9,12 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "PromptDashboard",
+    description:
+      "eval dashboard to help you find tail-end risk in prompt‑variant distributions",
+    link: { label: "Project", href: "" },
+  },
+  {
     title: "eval-mini-harness",
     description:
       "mini, fast regression harness for local LLMs using Ollama",

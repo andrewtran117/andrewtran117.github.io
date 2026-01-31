@@ -54,6 +54,12 @@ export default function Home() {
             {/* <h1 className="text-2xl font-semibold mb-4">Hello!</h1> */}
 
             <p className="italic text-xs mb-6 text-right">trying out a winter palette, thoughts?</p>
+            <div className="mb-8">
+              <h2 className="text-xl font-semibold mb-3">My North Star</h2>
+              <p className="text-base leading-relaxed mb-4">
+                I look to solve problems where I can think like a researcher and ship like an engineer. My work should have a high impact on others, especailly those from underserved communities.
+              </p>
+            </div>
 
             {/* Research Section */}
             <div className="mb-8">
@@ -72,10 +78,9 @@ export default function Home() {
               </p>
               <ul className="list-disc pl-6 space-y-1 mb-6">
                 <li className="text-base leading-relaxed">AI Evaluations</li>
-                <li className="text-base leading-relaxed">AI Control</li>
                 <li className="text-base leading-relaxed">Mechanistic Interpretability</li>
-                <li className="text-base leading-relaxed">Large Language Models in CS Education</li>
-                <li className="text-base leading-relaxed">Educational Technology & Student Development</li>
+                <li className="text-base leading-relaxed">AI Control</li>
+                <li className="text-base leading-relaxed">AI in Education</li>
               </ul>
             </div>
 
@@ -100,7 +105,7 @@ export default function Home() {
             <div className="mb-8">
               <h2 className="text-xl font-semibold mb-3">Hobbies</h2>
               <p className="text-base leading-relaxed mb-4">
-                I love trying new food. I currently have 372 new Beli spots for 2025.
+                I love trying new food. I have 400+ resturants on Beli.
               </p>
             </div>
 
