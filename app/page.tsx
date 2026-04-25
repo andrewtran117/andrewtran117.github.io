@@ -4,17 +4,17 @@
 import { useState } from "react";
 import ProfileGrid from "./components/GridSection";
 import ResearchExperience from "./components/ResearchExp";
-import ProjectsSection from "./components/ProjectsSection";
+// import ProjectsSection from "./components/ProjectsSection";
 
-type TabKey = "about" | "publications" | "projects";
+type TabKey = "about" | "publications" /* | "projects" */;
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<TabKey>("about");
 
   return (
-    <main className="flex flex-col md:flex-row min-h-screen bg-[#f2f5fa] text-[#0f2a3d] md:overflow-hidden max-w-7xl mx-auto">
+    <main className="flex flex-col md:flex-row min-h-screen bg-[#fdf8f5] text-[#3d3028] md:overflow-hidden max-w-7xl mx-auto">
       {/* Profile Info Column - Non-scrollable */}
-      <div className="w-full md:w-1/4 md:min-w-[300px] px-6 md:pl-16 md:pr-10 pt-12 md:pt-24 pb-6 bg-[#f2f5fa] md:sticky md:top-0 md:self-start">
+      <div className="w-full md:w-1/4 md:min-w-[300px] px-6 md:pl-16 md:pr-10 pt-12 md:pt-24 pb-6 bg-[#fdf8f5] md:sticky md:top-0 md:self-start">
         <div className="w-full">
           <ProfileGrid />
 
@@ -35,13 +35,13 @@ export default function Home() {
               >
                 Publications
               </button>
-              <button
+              {/* <button
                 className="tab-link text-left"
                 aria-current={activeTab === "projects" ? "page" : undefined}
                 onClick={() => setActiveTab("projects")}
               >
                 Projects
-              </button>
+              </button> */}
             </nav>
           </div>
         </div>
@@ -53,22 +53,25 @@ export default function Home() {
           <div className="mb-12 md:pr-16 md:pl-0">
             {/* <h1 className="text-2xl font-semibold mb-4">Hello!</h1> */}
 
-            <p className="italic text-xs mb-6 text-right">trying out a winter palette, thoughts?</p>
+            <p className="italic text-xs mb-6 text-right">trying out a spring palette, thoughts?</p>
             <div className="mb-8">
-              <h2 className="text-xl font-semibold mb-3">My North Star</h2>
+              <h2 className="text-xl font-semibold mb-3">About Me</h2>
               <p className="text-base leading-relaxed mb-4">
-                I solve problems where I can think like both a researcher and engineer. My work should have a high impact on others, and especially those from underserved communities.
+                I'm currently building AI powered customer service at{' '}
+                <a href="https://aws.amazon.com/connect/" className="text-[#b8a0c4] underline hover:text-[#9a80aa]" target="_blank" rel="noopener noreferrer">AWS Connect</a>
+                . Additionally, I have ongoing research projects in{' '}
+                AI Evals (<a href="https://evalevalai.com/projects/every-eval-ever/" className="text-[#b8a0c4] underline hover:text-[#9a80aa]" target="_blank" rel="noopener noreferrer">Evaluation Evaluations</a>), and Model Introspection (<a href="https://sparai.org/projects/sp26/?mentor=Lydia+Nottingham" className="text-[#b8a0c4] underline hover:text-[#9a80aa]" target="_blank" rel="noopener noreferrer">SPAR Spring 2026</a>).
               </p>
             </div>
 
-            {/* Research Section */}
+            {/* Research Section
             <div className="mb-8">
               <h2 className="text-xl font-semibold mb-3">Research</h2>
               <p className="text-base leading-relaxed mb-4">
                 I'm working on AI Evaluations with the{' '}
                 <a
                   href="https://evalevalai.com/"
-                  className="text-[#2f7ac6] underline hover:text-[#1f639e]"
+                  className="text-[#b8a0c4] underline hover:text-[#9a80aa]"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -82,16 +85,16 @@ export default function Home() {
                 <li className="text-base leading-relaxed">AI Control</li>
                 <li className="text-base leading-relaxed">AI in Education</li>
               </ul>
-            </div>
+            </div> */}
 
-            {/* Software Engineering Section */}
+            {/* Software Engineering Section
             <div className="mb-8">
               <h2 className="text-xl font-semibold mb-3">Software Engineering</h2>
               <p className="text-base leading-relaxed mb-4">
                 I'm currently a Software Engineer at{' '}
                 <a
                   href="https://aws.amazon.com/connect/agent-workspace/"
-                  className="text-[#2f7ac6] underline hover:text-[#1f639e]"
+                  className="text-[#b8a0c4] underline hover:text-[#9a80aa]"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -99,13 +102,13 @@ export default function Home() {
                 </a>{' '}
                 working on Agent Workspace.
               </p>
-            </div>
+            </div> */}
 
             {/* Hobbies Section */}
             <div className="mb-8">
               <h2 className="text-xl font-semibold mb-3">Hobbies</h2>
               <p className="text-base leading-relaxed mb-4">
-                I love trying new food. I have 400+ resturants on Beli.
+                I love trying new food. I have almost 600 resturants logged on Beli.
               </p>
             </div>
 
@@ -139,11 +142,11 @@ export default function Home() {
           </div>
         )}
 
-        {activeTab === "projects" && (
+        {/* {activeTab === "projects" && (
           <div className="md:pr-16 md:pl-0">
             <ProjectsSection />
           </div>
-        )}
+        )} */}
       </div>
     </main>
   );
