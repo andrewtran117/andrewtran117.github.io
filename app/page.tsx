@@ -108,6 +108,9 @@ export default function Home() {
               <h2 className="text-xl font-semibold mb-3">Other Interesting Work</h2>
               <p className="text-base leading-relaxed mb-4">
                 During my undergrad, I started OwlHacks (Temple University's annual hackathon). Over 3 years as director, I obtained $25,000+ in sponsorship value and brought in 500+ students from 15+ universities.
+                <br></br>
+                <br></br>
+                I've also hosted presentations on my career journey and inspired students at Temple University, Drexel University, and the Community College of Philadelphia.
               </p>
             </div>
 
