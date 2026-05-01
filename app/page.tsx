@@ -104,6 +104,13 @@ export default function Home() {
               </p>
             </div> */}
 
+            <div className="mb-8">
+              <h2 className="text-xl font-semibold mb-3">Other Interesting Work</h2>
+              <p className="text-base leading-relaxed mb-4">
+                During my undergrad, I started OwlHacks (Temple University's annual hackathon). Over 3 years as director, I obtained $25,000+ in sponsorship value and brought in 500+ students from 15+ universities.
+              </p>
+            </div>
+
             {/* Hobbies Section */}
             <div className="mb-8">
               <h2 className="text-xl font-semibold mb-3">Hobbies</h2>
