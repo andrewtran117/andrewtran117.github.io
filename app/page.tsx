@@ -60,7 +60,10 @@ export default function Home() {
                 I'm currently building AI powered customer service at{' '}
                 <a href="https://aws.amazon.com/connect/" className="text-[#b8a0c4] underline hover:text-[#9a80aa]" target="_blank" rel="noopener noreferrer">AWS Connect</a>
                 . Additionally, I have ongoing research projects in{' '}
-                AI Evals (<a href="https://evalevalai.com/projects/every-eval-ever/" className="text-[#b8a0c4] underline hover:text-[#9a80aa]" target="_blank" rel="noopener noreferrer">Evaluation Evaluations</a>), and Model Introspection (<a href="https://sparai.org/projects/sp26/?mentor=Lydia+Nottingham" className="text-[#b8a0c4] underline hover:text-[#9a80aa]" target="_blank" rel="noopener noreferrer">SPAR Spring 2026</a>). The research I do today is grounded by 4 years of experience working on AIxCS Education and other Human-AI Research at the Temple University Human-Computer Interaction Lab (2021-2025).
+                AI Evals (<a href="https://evalevalai.com/projects/every-eval-ever/" className="text-[#b8a0c4] underline hover:text-[#9a80aa]" target="_blank" rel="noopener noreferrer">Evaluation Evaluations</a>), and Model Introspection (<a href="https://sparai.org/projects/sp26/?mentor=Lydia+Nottingham" className="text-[#b8a0c4] underline hover:text-[#9a80aa]" target="_blank" rel="noopener noreferrer">SPAR Spring 2026</a>).
+                <br></br>
+                <br></br>
+                The research I work on today is grounded by 4 years of experience in AIxCS Education and other Human-AI Research at the Temple University Human-Computer Interaction Lab (2021-2025).
               </p>
             </div>
 
