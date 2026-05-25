@@ -6,7 +6,7 @@ import ProfileGrid from "./components/GridSection";
 import ResearchExperience from "./components/ResearchExp";
 // import ProjectsSection from "./components/ProjectsSection";
 
-type TabKey = "about" | "publications" /* | "projects" */;
+type TabKey = "about" | "publications" | "community" /* | "projects" */;
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<TabKey>("about");
@@ -34,6 +34,13 @@ export default function Home() {
                 onClick={() => setActiveTab("publications")}
               >
                 Publications
+              </button>
+              <button
+                className="tab-link text-left"
+                aria-current={activeTab === "community" ? "page" : undefined}
+                onClick={() => setActiveTab("community")}
+              >
+                Community
               </button>
               {/* <button
                 className="tab-link text-left"
@@ -152,6 +159,25 @@ export default function Home() {
         {activeTab === "publications" && (
           <div className="md:pr-16 md:pl-0">
             <ResearchExperience />
+          </div>
+        )}
+
+        {activeTab === "community" && (
+          <div className="md:pr-16 md:pl-0">
+            <div className="mb-8">
+              <h2 className="text-xl font-semibold mb-3">OwlHacks</h2>
+              <p className="text-base leading-relaxed mb-4">
+                As an undergrad, I founded OwlHacks, Temple University's annual hackathon. Over 3 years as director, I secured $25,000+ in sponsorship value and brought together 500+ students from 15+ universities.
+              </p>
+              <img src="/OwlHacks2024.PNG" alt="OwlHacks 2024" className="rounded-lg w-full object-cover" />
+            </div>
+            <div className="mb-8">
+              <h2 className="text-xl font-semibold mb-3">ACM at Temple University</h2>
+              <p className="text-base leading-relaxed mb-4">
+                I served as President of Temple University's ACM chapter, where I led initiatives to grow the CS community on campus and connect students with industry and research opportunities.
+              </p>
+              <img src="/ACM2024.JPG" alt="ACM 2024" className="rounded-lg w-full object-cover" />
+            </div>
           </div>
         )}
 
