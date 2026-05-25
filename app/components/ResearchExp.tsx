@@ -23,7 +23,7 @@ const ResearchExperience = () => {
         <CitationCard
             title="Who Evaluates AI's Social Impacts? Mapping Coverage and Gaps in First and Third Party Evaluations"
             authors="Authors at the Evaluating Evaluations (EvalEval) Coalition"
-            venue="Under Review"
+            venue="ICML"
             year={2026}
             link="https://arxiv.org/pdf/2511.05613"
             highlightName="Andrew Tran"
