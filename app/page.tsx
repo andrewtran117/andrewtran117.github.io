@@ -170,6 +170,7 @@ export default function Home() {
                 As an undergrad, I founded OwlHacks, Temple University's annual hackathon. Over 3 years as director, I secured $25,000+ in sponsorship value and brought together 500+ students from 15+ universities.
               </p>
               <img src="/OwlHacks2024.PNG" alt="OwlHacks 2024" className="rounded-lg w-full object-cover" />
+              <p className="italic text-sm text-center mt-2">OwlHacks E-Board 2024</p>
             </div>
             <div className="mb-8">
               <h2 className="text-xl font-semibold mb-3">ACM at Temple University</h2>
@@ -177,6 +178,7 @@ export default function Home() {
                 I served as President of Temple University's ACM chapter, where I led initiatives to grow the CS community on campus and connect students with industry and research opportunities.
               </p>
               <img src="/ACM2024.JPG" alt="ACM 2024" className="rounded-lg w-full object-cover" />
+              <p className="italic text-sm text-center mt-2">ACM Boba Social</p>
             </div>
           </div>
         )}
