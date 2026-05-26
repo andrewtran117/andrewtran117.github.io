@@ -18,9 +18,24 @@ export default function Home() {
         <div className="w-full">
           <ProfileGrid />
 
-          {/* Tabs */}
+          {/* Tabs - Dropdown on mobile, list on desktop */}
           <div className="mt-8">
-            <nav className="flex md:flex-col gap-3" aria-label="Sidebar tabs">
+            {/* Mobile dropdown */}
+            <div className="md:hidden">
+              <select
+                value={activeTab}
+                onChange={(e) => setActiveTab(e.target.value as TabKey)}
+                className="w-full p-2 rounded bg-background text-foreground border border-accent"
+              >
+                <option value="about">About Me</option>
+                <option value="engineer">Engineering</option>
+                <option value="publications">AI Research</option>
+                <option value="community">Community</option>
+                <option value="hobbies">Hobbies</option>
+              </select>
+            </div>
+            {/* Desktop tabs */}
+            <nav className="hidden md:flex md:flex-col gap-3" aria-label="Sidebar tabs">
               <button
                 className="tab-link text-left"
                 aria-current={activeTab === "about" ? "page" : undefined}
@@ -56,13 +71,6 @@ export default function Home() {
               >
                 Hobbies
               </button>
-              {/* <button
-                className="tab-link text-left"
-                aria-current={activeTab === "projects" ? "page" : undefined}
-                onClick={() => setActiveTab("projects")}
-              >
-                Projects
-              </button> */}
             </nav>
           </div>
         </div>
