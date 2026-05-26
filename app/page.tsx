@@ -223,7 +223,7 @@ export default function Home() {
               </p>
               <div className="flex gap-4 items-stretch">
                 <div className="flex flex-col items-center w-1/2">
-                  <img src="/Macneil.jpg" alt="Macneil" className="rounded-lg w-full h-full object-cover object-center" />
+                  <img src="/MacNeil.JPG" alt="Macneil" className="rounded-lg w-full h-full object-cover object-center" />
                   <p className="italic text-sm mt-2">Dr. Stephen MacNeil</p>
                 </div>
                 <div className="flex flex-col items-center w-1/2">
