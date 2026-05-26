@@ -6,7 +6,7 @@ import ProfileGrid from "./components/GridSection";
 import ResearchExperience from "./components/ResearchExp";
 // import ProjectsSection from "./components/ProjectsSection";
 
-type TabKey = "about" | "publications" | "community" /* | "projects" */;
+type TabKey = "about" | "engineer" | "publications" | "community" | "hobbies" /* | "projects" */;
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<TabKey>("about");
@@ -30,10 +30,17 @@ export default function Home() {
               </button>
               <button
                 className="tab-link text-left"
+                aria-current={activeTab === "engineer" ? "page" : undefined}
+                onClick={() => setActiveTab("engineer")}
+              >
+                Engineering
+              </button>
+              <button
+                className="tab-link text-left"
                 aria-current={activeTab === "publications" ? "page" : undefined}
                 onClick={() => setActiveTab("publications")}
               >
-                Publications
+                AI Research
               </button>
               <button
                 className="tab-link text-left"
@@ -41,6 +48,13 @@ export default function Home() {
                 onClick={() => setActiveTab("community")}
               >
                 Community
+              </button>
+              <button
+                className="tab-link text-left"
+                aria-current={activeTab === "hobbies" ? "page" : undefined}
+                onClick={() => setActiveTab("hobbies")}
+              >
+                Hobbies
               </button>
               {/* <button
                 className="tab-link text-left"
@@ -156,6 +170,11 @@ export default function Home() {
           </div>
         )}
 
+        {activeTab === "engineer" && (
+          <div className="md:pr-16 md:pl-0">
+          </div>
+        )}
+
         {activeTab === "publications" && (
           <div className="md:pr-16 md:pl-0">
             <ResearchExperience />
@@ -164,22 +183,68 @@ export default function Home() {
 
         {activeTab === "community" && (
           <div className="md:pr-16 md:pl-0">
-            <div className="mb-8">
-              <h2 className="text-xl font-semibold mb-3">OwlHacks</h2>
+            <h2 className="text-xl font-semibold mb-6">Community</h2>
               <p className="text-base leading-relaxed mb-4">
-                During my undergrad, I founded OwlHacks, Temple University's annual hackathon. Over 3 years as director, I secured $25,000+ in sponsorship value and brought together 500+ students from 15+ universities.
+                The most rewarding experiences in my life have come from the communities I've helped build. Thank You everyone!
               </p>
-              <img src="/OwlHacks2024.PNG" alt="OwlHacks 2024" className="rounded-lg w-full object-cover" />
-              <p className="italic text-sm text-center mt-2">OwlHacks E-Board 2024</p>
+              <br></br>
+            <div className="mb-8">
+              <h3 className="text-lg font-medium mb-3">OwlHacks</h3>
+              <p className="text-base leading-relaxed mb-4">
+                I founded OwlHacks, Temple University's annual hackathon. Over 3 years as director, I secured $25,000+ in sponsorship value and brought together 500+ students from 15+ universities.
+              </p>
+              <div className="flex gap-4 mb-4">
+                <div className="flex flex-col items-center w-1/2">
+                  <img src="/OwlHacks2024.PNG" alt="OwlHacks 2024" className="rounded-lg w-full object-cover" />
+                  <p className="italic text-sm mt-2">OwlHacks E-Board 2024</p>
+                </div>
+                <div className="flex flex-col items-center w-1/2">
+                  <img src="/Nahum.jpeg" alt="Nahum" className="rounded-lg w-full object-cover" />
+                  <p className="italic text-sm mt-2">My roommate Nahum :)</p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="flex flex-col items-center w-1/2">
+                  <img src="/OpeningCeremony.JPG" alt="Opening Ceremony" className="rounded-lg w-full h-48 object-cover" />
+                  <p className="italic text-sm mt-2">Opening Ceremony</p>
+                </div>
+                <div className="flex flex-col items-center w-1/2">
+                  <img src="/FirstOwlHacks.jpg" alt="The First OwlHacks" className="rounded-lg w-full h-48 object-cover" />
+                  <p className="italic text-sm mt-2">The First OwlHacks</p>
+                </div>
+              </div>
             </div>
             <div className="mb-8">
-              <h2 className="text-xl font-semibold mb-3">ACM at Temple University</h2>
+              <h3 className="text-lg font-medium mb-3">ACM at Temple University</h3>
               <p className="text-base leading-relaxed mb-4">
                 I served as President of Temple University's ACM chapter, where I led initiatives to grow the CS community on campus and connect students with industry and research opportunities.
               </p>
-              <img src="/ACM2024.JPG" alt="ACM 2024" className="rounded-lg w-full object-cover" />
-              <p className="italic text-sm text-center mt-2">ACM Boba Social</p>
+              <div className="flex flex-col items-center">
+                <img src="/ACM2024.JPG" alt="ACM 2024" className="rounded-lg w-3/5 object-cover" />
+                <p className="italic text-sm mt-2">ACM Boba Social</p>
+              </div>
             </div>
+            <div className="mb-8">
+              <h3 className="text-lg font-medium mb-3">Temple HCI Lab</h3>
+              <p className="text-base leading-relaxed mb-4">
+                I joined the Temple HCI Lab as one of the first 3 researchers. By the time I graduated, there were over 50+ undergraduate researchers. Many of which I have had the opportunity to mentor.
+              </p>
+              <div className="flex gap-4 items-stretch">
+                <div className="flex flex-col items-center w-1/2">
+                  <img src="/Macneil.jpg" alt="Macneil" className="rounded-lg w-full h-full object-cover object-center" />
+                  <p className="italic text-sm mt-2">Dr. Stephen MacNeil</p>
+                </div>
+                <div className="flex flex-col items-center w-1/2">
+                  <img src="/tapia.jpeg" alt="Tapia" className="rounded-lg w-full h-full object-cover object-center" />
+                  <p className="italic text-sm mt-2">Presentation at Tapia'24</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {activeTab === "hobbies" && (
+          <div className="md:pr-16 md:pl-0">
           </div>
         )}
 
