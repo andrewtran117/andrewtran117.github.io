@@ -10,32 +10,53 @@ type TabKey = "about" | "engineer" | "publications" | "community" | "hobbies" /*
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<TabKey>("about");
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleTabClick = (tab: TabKey) => {
+    setActiveTab(tab);
+    setMenuOpen(false);
+  };
 
   return (
-    <main className="flex flex-col md:flex-row min-h-screen bg-background text-foreground md:overflow-hidden max-w-7xl mx-auto">
+    <main className="flex flex-col md:flex-row min-h-screen bg-background text-foreground md:overflow-hidden max-w-7xl mx-auto overflow-x-hidden">
+      {/* Mobile hamburger button */}
+      <button
+        className="md:hidden fixed top-4 left-4 z-50 p-2"
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Toggle menu"
+      >
+        <div className="space-y-1.5">
+          <span className={`block w-6 h-0.5 bg-foreground transition-transform ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+          <span className={`block w-6 h-0.5 bg-foreground transition-opacity ${menuOpen ? 'opacity-0' : ''}`} />
+          <span className={`block w-6 h-0.5 bg-foreground transition-transform ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+        </div>
+      </button>
+
+      {/* Mobile slide-out menu */}
+      {menuOpen && (
+        <div
+          className="md:hidden fixed inset-0 bg-black/50 z-40"
+          onClick={() => setMenuOpen(false)}
+        />
+      )}
+      <div className={`md:hidden fixed top-0 left-0 h-full w-64 bg-background z-40 transform transition-transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'} p-8 pt-16`}>
+        <nav className="flex flex-col gap-4" aria-label="Mobile tabs">
+          <button className="tab-link text-left" aria-current={activeTab === "about" ? "page" : undefined} onClick={() => handleTabClick("about")}>About Me</button>
+          <button className="tab-link text-left" aria-current={activeTab === "engineer" ? "page" : undefined} onClick={() => handleTabClick("engineer")}>Engineering</button>
+          <button className="tab-link text-left" aria-current={activeTab === "publications" ? "page" : undefined} onClick={() => handleTabClick("publications")}>AI Research</button>
+          <button className="tab-link text-left" aria-current={activeTab === "community" ? "page" : undefined} onClick={() => handleTabClick("community")}>Community</button>
+          <button className="tab-link text-left" aria-current={activeTab === "hobbies" ? "page" : undefined} onClick={() => handleTabClick("hobbies")}>Hobbies</button>
+        </nav>
+      </div>
+
       {/* Profile Info Column - Non-scrollable */}
       <div className="w-full md:w-1/4 md:min-w-[300px] px-6 md:pl-16 md:pr-10 pt-12 md:pt-24 pb-6 bg-background md:sticky md:top-0 md:self-start">
         <div className="w-full">
           <ProfileGrid />
 
-          {/* Tabs - Dropdown on mobile, list on desktop */}
-          <div className="mt-8">
-            {/* Mobile dropdown */}
-            <div className="md:hidden">
-              <select
-                value={activeTab}
-                onChange={(e) => setActiveTab(e.target.value as TabKey)}
-                className="w-full p-2 rounded bg-background text-foreground border border-accent"
-              >
-                <option value="about">About Me</option>
-                <option value="engineer">Engineering</option>
-                <option value="publications">AI Research</option>
-                <option value="community">Community</option>
-                <option value="hobbies">Hobbies</option>
-              </select>
-            </div>
-            {/* Desktop tabs */}
-            <nav className="hidden md:flex md:flex-col gap-3" aria-label="Sidebar tabs">
+          {/* Desktop tabs */}
+          <div className="mt-8 hidden md:block">
+            <nav className="flex flex-col gap-3" aria-label="Sidebar tabs">
               <button
                 className="tab-link text-left"
                 aria-current={activeTab === "about" ? "page" : undefined}
@@ -83,7 +104,7 @@ export default function Home() {
             {/* <h1 className="text-2xl font-semibold mb-4">Hello!</h1> */}
 
             <p className="italic text-[10px] mb-6 text-right">thanks for stopping by!</p>
-            <p className="text-base leading-relaxed mb-4 ml-12">
+            <p className="text-base leading-relaxed mb-4 md:ml-12">
               Hi, my name is Andrew. I'm currently based in New York, NY.
               <br /><br />
               I'm a Software Engineer at{' '}
@@ -185,22 +206,22 @@ export default function Home() {
               <p className="text-base leading-relaxed mb-4">
                 I founded OwlHacks, Temple University's annual hackathon. Over 3 years as director, I secured $25,000+ in sponsorship value and brought together 500+ students from 15+ universities.
               </p>
-              <div className="flex gap-4 mb-4">
-                <div className="flex flex-col items-center w-1/2">
+              <div className="flex flex-col md:flex-row gap-4 mb-4">
+                <div className="flex flex-col items-center w-full md:w-1/2">
                   <img src="/OwlHacks2024.PNG" alt="OwlHacks 2024" className="rounded-lg w-full object-cover" />
                   <p className="italic text-sm mt-2">OwlHacks E-Board 2024</p>
                 </div>
-                <div className="flex flex-col items-center w-1/2">
+                <div className="flex flex-col items-center w-full md:w-1/2">
                   <img src="/Nahum.jpeg" alt="Nahum" className="rounded-lg w-full object-cover" />
                   <p className="italic text-sm mt-2">My roommate Nahum :)</p>
                 </div>
               </div>
-              <div className="flex gap-4">
-                <div className="flex flex-col items-center w-1/2">
+              <div className="flex flex-col md:flex-row gap-4">
+                <div className="flex flex-col items-center w-full md:w-1/2">
                   <img src="/OpeningCeremony.JPG" alt="Opening Ceremony" className="rounded-lg w-full h-48 object-cover" />
                   <p className="italic text-sm mt-2">Opening Ceremony</p>
                 </div>
-                <div className="flex flex-col items-center w-1/2">
+                <div className="flex flex-col items-center w-full md:w-1/2">
                   <img src="/FirstOwlHacks.jpg" alt="The First OwlHacks" className="rounded-lg w-full h-48 object-cover" />
                   <p className="italic text-sm mt-2">The First OwlHacks</p>
                 </div>
@@ -222,11 +243,11 @@ export default function Home() {
                 I joined the Temple HCI Lab as one of the first 3 researchers. By the time I graduated, there were over 50+ undergraduate researchers. Many of which I have had the opportunity to mentor.
               </p>
               <div className="flex gap-4 items-stretch">
-                <div className="flex flex-col items-center w-1/2">
+                <div className="flex flex-col items-center w-full md:w-1/2">
                   <img src="/MacNeil.JPG" alt="Macneil" className="rounded-lg w-full h-full object-cover object-center" />
                   <p className="italic text-sm mt-2">Dr. Stephen MacNeil</p>
                 </div>
-                <div className="flex flex-col items-center w-1/2">
+                <div className="flex flex-col items-center w-full md:w-1/2">
                   <img src="/Tapia.jpeg" alt="Tapia" className="rounded-lg w-full h-full object-cover object-center" />
                   <p className="italic text-sm mt-2">Presentation at Tapia'24</p>
                 </div>
