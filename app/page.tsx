@@ -227,7 +227,7 @@ export default function Home() {
                   <p className="italic text-sm mt-2">Dr. Stephen MacNeil</p>
                 </div>
                 <div className="flex flex-col items-center w-1/2">
-                  <img src="/tapia.jpeg" alt="Tapia" className="rounded-lg w-full h-full object-cover object-center" />
+                  <img src="/Tapia.jpeg" alt="Tapia" className="rounded-lg w-full h-full object-cover object-center" />
                   <p className="italic text-sm mt-2">Presentation at Tapia'24</p>
                 </div>
               </div>
