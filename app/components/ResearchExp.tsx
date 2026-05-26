@@ -4,12 +4,12 @@ const ResearchExperience = () => {
   return (
     <div className="pb-10">
       <h2 className="text-2xl font-bold mb-4">Publications</h2>
-      <div className="mb-4 text-[#3d3028]">
+      <div className="mb-4 text-foreground">
         {/* <h3 className="pb-2">
           Currently researching AI safety and reliability in the classroom. My goal is to democratize education for learners of all backgrounds. My work has led to 10 conference publications:&nbsp;
           <a
             href="https://scholar.google.com/citations?user=t9TUznoAAAAJ&hl=en"
-            className="text-[#b8a0c4] underline"
+            className="text-accent underline"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -19,7 +19,7 @@ const ResearchExperience = () => {
       </div>
 
       {/* Publication Cards */}
-      <div className="mt-0 text-[#3d3028]">
+      <div className="mt-0 text-foreground">
         <CitationCard
             title="Who Evaluates AI's Social Impacts? Mapping Coverage and Gaps in First and Third Party Evaluations"
             authors="Authors at the Evaluating Evaluations (EvalEval) Coalition"

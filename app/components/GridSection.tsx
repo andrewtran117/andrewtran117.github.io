@@ -9,7 +9,7 @@ import React from 'react';
 
 const ProfileGrid: React.FC = () => {
   return (
-    <div className="text-[#3d3028] w-full" style={{ fontFamily: 'var(--font-ibm-plex-mono), "IBM Plex Mono", monospace' }}>
+    <div className="text-foreground w-full">
       {/* Profile Photo and Info */}
       <div className="flex flex-col md:flex-col items-center md:items-start space-y-4">
         <div className="w-40 h-40 md:w-56 md:h-56 overflow-hidden">
@@ -26,7 +26,7 @@ const ProfileGrid: React.FC = () => {
           <div className="mt-2 flex flex-col gap-1">
             <a
               href="mailto:andrew.tran117@outlook.com"
-              className="text-sm text-[#3d3028] hover:text-[#9a80aa]"
+              className="text-sm text-foreground hover:text-accent-hover"
             >
               andrew.tran117@outlook.com
             </a>

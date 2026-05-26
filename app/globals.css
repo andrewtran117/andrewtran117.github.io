@@ -1,19 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #fdf8f5;
-  --foreground: #fdf8f5;
+  --background: #0F0F1A;
+  --foreground: #F5E6CA;
+  --muted: #8B7E6A;
+  --accent: #C93C3C;
+  --accent-hover: #E25B3A;
 }
 
 body {
-  background: #fdf8f5;
-  color: #3d3028;
-  font-family: var(--font-ibm-plex-mono), 'IBM Plex Mono', monospace;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Libre Baskerville', serif;
   overflow-x: hidden;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 5%;
+  right: 0%;
+  width: 200px;
+  height: 360px;
+  background-image: url('/lantern.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
 }
 
 html, body {
@@ -39,7 +59,7 @@ html {
   position: relative;
   display: inline-block;
   padding: 0.25rem 0.125rem; /* subtle vertical padding */
-  color: #3d3028;
+  color: var(--foreground);
   font-weight: 500;
   cursor: pointer;
   transition: color 200ms ease;
@@ -48,13 +68,13 @@ html {
 
 .tab-link:hover,
 .tab-link:focus-visible {
-  color: #b8a0c4;
+  color: var(--accent);
   outline: none;
 }
 
 /* Active tab state */
 .tab-link[aria-current="page"] {
-  color: #b8a0c4;
+  color: var(--accent);
 }
 
 /* Underline swoosh */
@@ -65,7 +85,7 @@ html {
   bottom: -2px;
   height: 2px;
   width: 100%;
-  background: #b8a0c4;
+  background: var(--accent);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 350ms ease;

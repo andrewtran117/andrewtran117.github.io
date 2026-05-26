@@ -11,6 +11,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        accent: "var(--accent)",
+        "accent-hover": "var(--accent-hover)",
+        muted: "var(--muted)",
       },
       fontFamily: {
         crimson: ["'Crimson Text'", "serif"], // Add Crimson Text font

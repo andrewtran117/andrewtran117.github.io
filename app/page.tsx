@@ -12,9 +12,9 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState<TabKey>("about");
 
   return (
-    <main className="flex flex-col md:flex-row min-h-screen bg-[#fdf8f5] text-[#3d3028] md:overflow-hidden max-w-7xl mx-auto">
+    <main className="flex flex-col md:flex-row min-h-screen bg-background text-foreground md:overflow-hidden max-w-7xl mx-auto">
       {/* Profile Info Column - Non-scrollable */}
-      <div className="w-full md:w-1/4 md:min-w-[300px] px-6 md:pl-16 md:pr-10 pt-12 md:pt-24 pb-6 bg-[#fdf8f5] md:sticky md:top-0 md:self-start">
+      <div className="w-full md:w-1/4 md:min-w-[300px] px-6 md:pl-16 md:pr-10 pt-12 md:pt-24 pb-6 bg-background md:sticky md:top-0 md:self-start">
         <div className="w-full">
           <ProfileGrid />
 
@@ -79,7 +79,7 @@ export default function Home() {
               Hi, my name is Andrew. I'm currently based in New York, NY.
               <br /><br />
               I'm a Software Engineer at{' '}
-              <a href="https://aws.amazon.com/connect/" className="text-[#b8a0c4] underline hover:text-[#9a80aa]" target="_blank" rel="noopener noreferrer">AWS Connect</a>
+              <a href="https://aws.amazon.com/connect/" className="text-accent underline hover:text-accent-hover" target="_blank" rel="noopener noreferrer">AWS Connect</a>
               , AI researcher, community builder, food enthusiast (add me on Beli!), traveler (currently planning Italy), reader, and so much more.
               <br /><br />
               I've worked on many domains including AI tools for education, AI Evaluation Infrastructure, Customer Service Platforms, Healthcare Platforms, and AI x Autonomous Drones (scanning buildings for pests).
@@ -87,7 +87,7 @@ export default function Home() {
               I want to leverage technology towards making the world a more inclusive place and provide opportunity for underserved communities.
               <br /><br />
               Please reach out if you are interested in working together or want to chat about new ideas:{' '}
-              <a href="mailto:andrew.tran117@outlook.com" className="text-[#b8a0c4] underline hover:text-[#9a80aa]">andrew.tran117@outlook.com</a>
+              <a href="mailto:andrew.tran117@outlook.com" className="text-accent underline hover:text-accent-hover">andrew.tran117@outlook.com</a>
             </p>
            
 
@@ -110,14 +110,14 @@ export default function Home() {
         {activeTab === "engineer" && (
           <div className="md:pr-16 md:pl-0">
             <h2 className="text-xl font-semibold mb-6">Engineering</h2>
-            <div className="mb-8 border-l-4 border-[#b8a0c4] pl-4">
+            <div className="mb-8 border-l-4 border-accent pl-4">
               <h3 className="text-lg font-medium">AWS Connect</h3>
-              <p className="text-sm text-[#888] mb-3">Software Engineer · Current</p>
+              <p className="text-sm text-muted mb-3">Software Engineer · Current</p>
               <p className="text-base leading-relaxed mb-4">
                 I'm currently a Software Engineer at{' '}
                 <a
                   href="https://aws.amazon.com/connect/"
-                  className="text-[#b8a0c4] underline hover:text-[#9a80aa]"
+                  className="text-accent underline hover:text-accent-hover"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -128,21 +128,21 @@ export default function Home() {
             </div>
             <div className="mb-8 pl-4">
               <h3 className="text-lg font-medium">Cigna</h3>
-              <p className="text-sm text-[#888] mb-3">Software Engineer Intern · Summer 2023</p>
+              <p className="text-sm text-muted mb-3">Software Engineer Intern · Summer 2023</p>
               <p className="text-base leading-relaxed mb-4">
                 Software Engineer Intern on myPassport, a pharmacy benefits management application. Built API endpoints with Kotlin and Spring Boot, utilized AWS Lambda with DynamoDB, and automated webpage testing with Selenium.
               </p>
             </div>
             <div className="mb-8 pl-4">
               <h3 className="text-lg font-medium">AeroPest</h3>
-              <p className="text-sm text-[#888] mb-3">Software Engineer Intern · 2021 – 2023</p>
+              <p className="text-sm text-muted mb-3">Software Engineer Intern · 2021 – 2023</p>
               <p className="text-base leading-relaxed mb-4">
                 Software Engineer Intern building a React Native mobile app for field inspection reports and AI vision for autonomous drones to detect pests during building inspections.
               </p>
             </div>
             <div className="mb-8 pl-4">
               <h3 className="text-lg font-medium">IBM</h3>
-              <p className="text-sm text-[#888] mb-3">Good Tech Fellow · Summer 2022</p>
+              <p className="text-sm text-muted mb-3">Good Tech Fellow · Summer 2022</p>
               <p className="text-base leading-relaxed mb-4">
                 Good Tech Fellow building HumanityWithUS, a web application for crafting data narratives about poverty in Philadelphia. Developed a spatial exploration interface in React.js and integrated IBM Watson's AI chatbot.
               </p>
@@ -155,7 +155,7 @@ export default function Home() {
             <div className="mb-8">
               <p className="text-base leading-relaxed mb-4">
                 I have ongoing research projects in{' '}
-                AI Evals (<a href="https://evalevalai.com/projects/every-eval-ever/" className="text-[#b8a0c4] underline hover:text-[#9a80aa]" target="_blank" rel="noopener noreferrer">Evaluation Evaluations</a>), and Model Introspection (<a href="https://sparai.org/projects/sp26/?mentor=Lydia+Nottingham" className="text-[#b8a0c4] underline hover:text-[#9a80aa]" target="_blank" rel="noopener noreferrer">SPAR Spring 2026</a>).
+                AI Evals (<a href="https://evalevalai.com/projects/every-eval-ever/" className="text-accent underline hover:text-accent-hover" target="_blank" rel="noopener noreferrer">Evaluation Evaluations</a>), and Model Introspection (<a href="https://sparai.org/projects/sp26/?mentor=Lydia+Nottingham" className="text-accent underline hover:text-accent-hover" target="_blank" rel="noopener noreferrer">SPAR Spring 2026</a>).
                 <br></br>
                 <br></br>
                 The research I work on today is grounded by 4 years of experience in AIxCS Education and other Human-AI Research at the Temple University Human-Computer Interaction Lab (2021-2025).

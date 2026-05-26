@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <g id="lantern">
+      <!-- Top hook -->
+      <rect x="9" y="0" width="2" height="4" fill="currentColor"/>
+      <!-- Top cap -->
+      <rect x="6" y="4" width="8" height="2" fill="currentColor"/>
+      <!-- Body -->
+      <rect x="4" y="6" width="12" height="4" fill="currentColor"/>
+      <rect x="2" y="10" width="16" height="8" fill="currentColor"/>
+      <rect x="4" y="18" width="12" height="4" fill="currentColor"/>
+      <!-- Bottom cap -->
+      <rect x="6" y="22" width="8" height="2" fill="currentColor"/>
+      <!-- Tassel -->
+      <rect x="9" y="24" width="2" height="4" fill="currentColor"/>
+    </g>
+  </defs>
+
+  <!-- Scattered lanterns at various positions -->
+  <use href="#lantern" x="80" y="40" color="#C93C3C"/>
+  <use href="#lantern" x="250" y="80" color="#C93C3C"/>
+  <use href="#lantern" x="450" y="30" color="#C93C3C"/>
+  <use href="#lantern" x="650" y="70" color="#C93C3C"/>
+
+  <use href="#lantern" x="150" y="180" color="#C93C3C"/>
+  <use href="#lantern" x="380" y="160" color="#C93C3C"/>
+  <use href="#lantern" x="560" y="200" color="#C93C3C"/>
+  <use href="#lantern" x="720" y="150" color="#C93C3C"/>
+
+  <use href="#lantern" x="50" y="320" color="#C93C3C"/>
+  <use href="#lantern" x="200" y="350" color="#C93C3C"/>
+  <use href="#lantern" x="420" y="300" color="#C93C3C"/>
+  <use href="#lantern" x="600" y="340" color="#C93C3C"/>
+
+  <use href="#lantern" x="120" y="480" color="#C93C3C"/>
+  <use href="#lantern" x="330" y="450" color="#C93C3C"/>
+  <use href="#lantern" x="500" y="500" color="#C93C3C"/>
+  <use href="#lantern" x="700" y="460" color="#C93C3C"/>
+</svg>

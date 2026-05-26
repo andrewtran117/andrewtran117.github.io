@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="360" viewBox="0 0 200 360">
+  <!-- String -->
+  <rect x="96" y="0" width="8" height="40" fill="#C93C3C"/>
+
+  <!-- Top cap -->
+  <rect x="60" y="40" width="80" height="16" fill="#C93C3C"/>
+
+  <!-- Upper taper -->
+  <rect x="44" y="56" width="112" height="16" fill="#C93C3C"/>
+
+  <!-- Body wide -->
+  <rect x="32" y="72" width="136" height="24" fill="#C93C3C"/>
+  <rect x="24" y="96" width="152" height="80" fill="#C93C3C"/>
+  <rect x="32" y="176" width="136" height="24" fill="#C93C3C"/>
+
+  <!-- Lower taper -->
+  <rect x="44" y="200" width="112" height="16" fill="#C93C3C"/>
+
+  <!-- Bottom cap -->
+  <rect x="60" y="216" width="80" height="16" fill="#C93C3C"/>
+
+  <!-- Tassel string -->
+  <rect x="96" y="232" width="8" height="32" fill="#C93C3C"/>
+
+  <!-- Tassel fringe -->
+  <rect x="80" y="264" width="8" height="24" fill="#C93C3C"/>
+  <rect x="88" y="264" width="8" height="32" fill="#C93C3C"/>
+  <rect x="96" y="264" width="8" height="36" fill="#C93C3C"/>
+  <rect x="104" y="264" width="8" height="32" fill="#C93C3C"/>
+  <rect x="112" y="264" width="8" height="24" fill="#C93C3C"/>
+
+  <!-- Horizontal ribs for detail -->
+  <rect x="24" y="120" width="152" height="4" opacity="0.3" fill="#0F0F1A"/>
+  <rect x="24" y="148" width="152" height="4" opacity="0.3" fill="#0F0F1A"/>
+</svg>
