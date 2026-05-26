@@ -50,7 +50,7 @@ export default function Home() {
       </div>
 
       {/* Profile Info Column - Non-scrollable */}
-      <div className={`w-full md:w-1/4 md:min-w-[300px] px-6 md:pl-16 md:pr-10 pt-12 md:pt-24 pb-6 bg-background md:sticky md:top-0 md:self-start ${activeTab !== "about" ? "hidden md:block" : ""}`}>
+      <div className={`w-full md:w-1/4 md:min-w-[300px] px-6 md:pl-16 md:pr-10 pt-12 md:pt-24 pb-0 md:pb-6 bg-background md:sticky md:top-0 md:self-start ${activeTab !== "about" ? "hidden md:block" : ""}`}>
         <div className="w-full">
           <ProfileGrid />
 
