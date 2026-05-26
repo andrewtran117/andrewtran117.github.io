@@ -74,84 +74,21 @@ export default function Home() {
           <div className="mb-12 md:pr-16 md:pl-0">
             {/* <h1 className="text-2xl font-semibold mb-4">Hello!</h1> */}
 
-            <p className="italic text-xs mb-6 text-right">trying out a spring palette, thoughts?</p>
-            <div className="mb-8">
-              <h2 className="text-xl font-semibold mb-3">About Me</h2>
-              <p className="text-base leading-relaxed mb-4">
-                I'm currently building AI powered customer service at{' '}
-                <a href="https://aws.amazon.com/connect/" className="text-[#b8a0c4] underline hover:text-[#9a80aa]" target="_blank" rel="noopener noreferrer">AWS Connect</a>
-                . Additionally, I have ongoing research projects in{' '}
-                AI Evals (<a href="https://evalevalai.com/projects/every-eval-ever/" className="text-[#b8a0c4] underline hover:text-[#9a80aa]" target="_blank" rel="noopener noreferrer">Evaluation Evaluations</a>), and Model Introspection (<a href="https://sparai.org/projects/sp26/?mentor=Lydia+Nottingham" className="text-[#b8a0c4] underline hover:text-[#9a80aa]" target="_blank" rel="noopener noreferrer">SPAR Spring 2026</a>).
-                <br></br>
-                <br></br>
-                The research I work on today is grounded by 4 years of experience in AIxCS Education and other Human-AI Research at the Temple University Human-Computer Interaction Lab (2021-2025).
-              </p>
-            </div>
-
-            {/* Research Section
-            <div className="mb-8">
-              <h2 className="text-xl font-semibold mb-3">Research</h2>
-              <p className="text-base leading-relaxed mb-4">
-                I'm working on AI Evaluations with the{' '}
-                <a
-                  href="https://evalevalai.com/"
-                  className="text-[#b8a0c4] underline hover:text-[#9a80aa]"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Evaluating Evaluations (EvalEval) Coalition
-                </a>
-                . Also looking for more projects/collaborators! My interests include:
-              </p>
-              <ul className="list-disc pl-6 space-y-1 mb-6">
-                <li className="text-base leading-relaxed">AI Evaluations</li>
-                <li className="text-base leading-relaxed">Mechanistic Interpretability</li>
-                <li className="text-base leading-relaxed">AI Control</li>
-                <li className="text-base leading-relaxed">AI in Education</li>
-              </ul>
-            </div> */}
-
-            {/* Software Engineering Section
-            <div className="mb-8">
-              <h2 className="text-xl font-semibold mb-3">Software Engineering</h2>
-              <p className="text-base leading-relaxed mb-4">
-                I'm currently a Software Engineer at{' '}
-                <a
-                  href="https://aws.amazon.com/connect/agent-workspace/"
-                  className="text-[#b8a0c4] underline hover:text-[#9a80aa]"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  AWS Connect
-                </a>{' '}
-                working on Agent Workspace.
-              </p>
-            </div> */}
-
-            <div className="mb-8">
-              <h2 className="text-xl font-semibold mb-3">Other Interesting Work</h2>
-              <p className="text-base leading-relaxed mb-4">
-                During my undergrad, I started OwlHacks (Temple University's annual hackathon). Over 3 years as director, I obtained $25,000+ in sponsorship value and brought in 500+ students from 15+ universities.
-                <br></br>
-                <br></br>
-                I've also hosted presentations on my career journey and inspired students at Temple University, Drexel University, and the Community College of Philadelphia.
-              </p>
-            </div>
-
-            {/* Hobbies Section */}
-            <div className="mb-8">
-              <h2 className="text-xl font-semibold mb-3">Hobbies</h2>
-              <p className="text-base leading-relaxed mb-4">
-                I love trying new food. I have almost 600 resturants logged on Beli.
-              </p>
-            </div>
-
-            {/* Commented out News Section
-            <hr className="border-t border-[#dddddd]/70 my-8" />
-            <h3 className="text-lg font-semibold mt-8">Upcoming News</h3>
-            <ul className="list-disc pl-6 mt-2 space-y-1">
-              <li className="text-[#666666]">Invited to speak at OwHacks 2025 on a panel.</li>
-            </ul> */}
+            <p className="italic text-[10px] mb-6 text-right">thanks for stopping by!</p>
+            <p className="text-base leading-relaxed mb-4 ml-12">
+              Hi, my name is Andrew. I'm currently based in New York, NY.
+              <br /><br />
+              I'm a Software Engineer at{' '}
+              <a href="https://aws.amazon.com/connect/" className="text-[#b8a0c4] underline hover:text-[#9a80aa]" target="_blank" rel="noopener noreferrer">AWS Connect</a>
+              , AI researcher, community builder, food enthusiast (add me on Beli!), traveler (currently planning Italy), reader, and so much more.
+              <br /><br />
+              I've worked on many domains including AI tools for education, AI Evaluation Infrastructure, Customer Service Platforms, Healthcare Platforms, and AI x Autonomous Drones (scanning buildings for pests).
+              <br /><br />
+              I want to leverage technology towards making the world a more inclusive place and provide opportunity for underserved communities.
+              <br /><br />
+              Please reach out if you are interested in working together or want to chat about new ideas:{' '}
+              <a href="mailto:andrew.tran117@outlook.com" className="text-[#b8a0c4] underline hover:text-[#9a80aa]">andrew.tran117@outlook.com</a>
+            </p>
            
 
 
@@ -172,11 +109,58 @@ export default function Home() {
 
         {activeTab === "engineer" && (
           <div className="md:pr-16 md:pl-0">
+            <h2 className="text-xl font-semibold mb-6">Engineering</h2>
+            <div className="mb-8 border-l-4 border-[#b8a0c4] pl-4">
+              <h3 className="text-lg font-medium">AWS Connect</h3>
+              <p className="text-sm text-[#888] mb-3">Software Engineer · Current</p>
+              <p className="text-base leading-relaxed mb-4">
+                I'm currently a Software Engineer at{' '}
+                <a
+                  href="https://aws.amazon.com/connect/"
+                  className="text-[#b8a0c4] underline hover:text-[#9a80aa]"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  AWS Connect
+                </a>
+                , building AI-powered customer service solutions.
+              </p>
+            </div>
+            <div className="mb-8 pl-4">
+              <h3 className="text-lg font-medium">Cigna</h3>
+              <p className="text-sm text-[#888] mb-3">Software Engineer Intern · Summer 2023</p>
+              <p className="text-base leading-relaxed mb-4">
+                Software Engineer Intern on myPassport, a pharmacy benefits management application. Built API endpoints with Kotlin and Spring Boot, utilized AWS Lambda with DynamoDB, and automated webpage testing with Selenium.
+              </p>
+            </div>
+            <div className="mb-8 pl-4">
+              <h3 className="text-lg font-medium">AeroPest</h3>
+              <p className="text-sm text-[#888] mb-3">Software Engineer Intern · 2021 – 2023</p>
+              <p className="text-base leading-relaxed mb-4">
+                Software Engineer Intern building a React Native mobile app for field inspection reports and AI vision for autonomous drones to detect pests during building inspections.
+              </p>
+            </div>
+            <div className="mb-8 pl-4">
+              <h3 className="text-lg font-medium">IBM</h3>
+              <p className="text-sm text-[#888] mb-3">Good Tech Fellow · Summer 2022</p>
+              <p className="text-base leading-relaxed mb-4">
+                Good Tech Fellow building HumanityWithUS, a web application for crafting data narratives about poverty in Philadelphia. Developed a spatial exploration interface in React.js and integrated IBM Watson's AI chatbot.
+              </p>
+            </div>
           </div>
         )}
 
         {activeTab === "publications" && (
           <div className="md:pr-16 md:pl-0">
+            <div className="mb-8">
+              <p className="text-base leading-relaxed mb-4">
+                I have ongoing research projects in{' '}
+                AI Evals (<a href="https://evalevalai.com/projects/every-eval-ever/" className="text-[#b8a0c4] underline hover:text-[#9a80aa]" target="_blank" rel="noopener noreferrer">Evaluation Evaluations</a>), and Model Introspection (<a href="https://sparai.org/projects/sp26/?mentor=Lydia+Nottingham" className="text-[#b8a0c4] underline hover:text-[#9a80aa]" target="_blank" rel="noopener noreferrer">SPAR Spring 2026</a>).
+                <br></br>
+                <br></br>
+                The research I work on today is grounded by 4 years of experience in AIxCS Education and other Human-AI Research at the Temple University Human-Computer Interaction Lab (2021-2025).
+              </p>
+            </div>
             <ResearchExperience />
           </div>
         )}
@@ -245,6 +229,7 @@ export default function Home() {
 
         {activeTab === "hobbies" && (
           <div className="md:pr-16 md:pl-0">
+            <p className="text-base text-center mt-12">COMING SOON, taking my time with this section</p>
           </div>
         )}
 
