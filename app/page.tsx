@@ -98,7 +98,7 @@ export default function Home() {
       </div>
 
       {/* Content Column - Scrollable */}
-      <div className="w-full md:w-3/4 px-6 md:pl-12 md:pr-8 pt-14 md:pt-24 pb-12 md:overflow-y-auto md:max-h-screen">
+      <div className="w-full md:w-3/4 px-6 md:pl-12 md:pr-8 pt-20 md:pt-24 pb-12 md:overflow-y-auto md:max-h-screen">
         {activeTab === "about" && (
           <div className="mb-12 md:pr-16 md:pl-0">
             {/* <h1 className="text-2xl font-semibold mb-4">Hello!</h1> */}
