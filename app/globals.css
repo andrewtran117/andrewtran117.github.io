@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #0F0F1A;
-  --foreground: #F5E6CA;
+  --background: #FFFFFF;
+  --foreground: #1a1a1a;
   --muted: #8B7E6A;
   --accent: #C93C3C;
   --accent-hover: #E25B3A;
@@ -16,7 +13,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Times New Roman', Times, serif;
   overflow-x: hidden;
   position: relative;
 }
@@ -41,40 +38,27 @@ html, body {
   margin: 0;
 }
 
-main {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-}
-
-.container {
-  scroll-snap-align: start;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
-/* Sidebar Tab Styling */
+/* Nav Tab Styling */
 .tab-link {
   position: relative;
   display: inline-block;
-  padding: 0.25rem 0.125rem; /* subtle vertical padding */
+  padding: 0.25rem 0.125rem;
   color: var(--foreground);
   font-weight: 500;
   cursor: pointer;
   transition: color 200ms ease;
-  border: none; /* no box */
+  border: none;
+  text-decoration: none;
 }
 
 .tab-link:hover,
 .tab-link:focus-visible {
   color: var(--accent);
   outline: none;
-}
-
-/* Active tab state */
-.tab-link[aria-current="page"] {
-  color: var(--accent);
 }
 
 /* Underline swoosh */
@@ -92,7 +76,6 @@ html {
 }
 
 .tab-link:hover::after,
-.tab-link:focus-visible::after,
-.tab-link[aria-current="page"]::after {
-  transform: scaleX(1); /* swoosh to the right */
+.tab-link:focus-visible::after {
+  transform: scaleX(1);
 }

@@ -21,6 +21,15 @@ const ResearchExperience = () => {
       {/* Publication Cards */}
       <div className="mt-0 text-foreground">
         <CitationCard
+            title="Evaluation Cards: An Interpretive Layer for AI Evaluation Reporting"
+            authors="Authors at the Evaluating Evaluations (EvalEval) Coalition"
+            venue="NeurIPS (Spotlight)"
+            year={2026}
+            link="https://arxiv.org/pdf/2606.09809"
+            highlightName="Andrew Tran"
+        />
+
+        <CitationCard
             title="Who Evaluates AI's Social Impacts? Mapping Coverage and Gaps in First and Third Party Evaluations"
             authors="Authors at the Evaluating Evaluations (EvalEval) Coalition"
             venue="ICML"
