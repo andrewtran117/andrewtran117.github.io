@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import ProfileGrid from "./components/GridSection";
 import ResearchExperience from "./components/ResearchExp";
 
 const sections = [
