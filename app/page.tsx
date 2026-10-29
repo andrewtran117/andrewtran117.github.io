@@ -7,7 +7,7 @@ import ResearchExperience from "./components/ResearchExp";
 const sections = [
   { id: "about", label: "About Me" },
   // { id: "engineering", label: "Engineering" },
-  { id: "research", label: "AI Research" },
+  { id: "research", label: "Publications" },
   { id: "community", label: "Community" },
 ];
 

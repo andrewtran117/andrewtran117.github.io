@@ -2,8 +2,8 @@ import CitationCard from "./CitationCard";
 
 const ResearchExperience = () => {
   return (
-    <div className="pb-10">
-      <h2 className="text-2xl font-bold mb-4">Publications</h2>
+    <div className="pb-0">
+      <h2 className="text-xl font-semibold mb-3">Publications</h2>
       <div className="mb-4 text-foreground">
         {/* <h3 className="pb-2">
           Currently researching AI safety and reliability in the classroom. My goal is to democratize education for learners of all backgrounds. My work has led to 10 conference publications:&nbsp;
